@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    [SerializeField] GameObject towerPrefab;
+    [SerializeField] Tower towerPrefab;
     [SerializeField] GameObject playerPrefab;
     
     Vector3 currentPlayerPosition;
     [SerializeField] float placeDistance = 1f;
 
     [SerializeField] bool isPlaceable;
+    bool isTowerPlaced = false;
+
+    Bank bank; 
+
+    void Start()
+    {
+        bank = FindObjectOfType<Bank>();
+    }
 
     public bool IsPlaceableValue { 
         get {return isPlaceable;}
@@ -26,12 +34,12 @@ public class Waypoint : MonoBehaviour
 
             float playerDistanceFromTile = Vector2.Distance(currentPlayerPosition, potentialTowerPosition);
 
-            Debug.Log(playerDistanceFromTile.ToString());
-            Debug.Log(currentPlayerPosition.ToString());
-
             if (playerDistanceFromTile <= placeDistance)
             {
-                Instantiate(towerPrefab, potentialTowerPosition, Quaternion.identity);
+                isTowerPlaced = towerPrefab.CreateTower(towerPrefab, potentialTowerPosition);
+            }
+                    
+            if (isTowerPlaced) {
                 isPlaceable = false;
             }
         }
