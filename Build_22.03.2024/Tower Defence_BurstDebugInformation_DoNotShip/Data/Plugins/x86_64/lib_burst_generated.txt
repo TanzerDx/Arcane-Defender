@@ -1,4 +1,4 @@
-Library: D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+Library: D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-16
 --target=X64_SSE2
@@ -58,10 +58,10 @@ Library: D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugi
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="Tower Defence_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\Burst
+--temp-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\Burst
 --key-folder=D:/Unity/2022.3.20f1/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Library\Burst
---output=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Library\Burst
+--output=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -159,10 +159,10 @@ Library: D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugi
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="Tower Defence_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\Burst
+--temp-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\Burst
 --key-folder=D:/Unity/2022.3.20f1/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Library\Burst
---output=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Library\Burst
+--output=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -262,10 +262,10 @@ Library: D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugi
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="Tower Defence_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\Burst
+--temp-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\Burst
 --key-folder=D:/Unity/2022.3.20f1/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Library\Burst
---output=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Library\Burst
+--output=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ZBinningJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ZBinningJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--77fc393cb521ac129b1392d4eb94d29a
@@ -331,10 +331,10 @@ Library: D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugi
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="Tower Defence_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\Burst
+--temp-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\Burst
 --key-folder=D:/Unity/2022.3.20f1/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Uni\Semester 4\Duo Project\Tower Defence\Library\Burst
---output=D:\Uni\Semester 4\Duo Project\Tower Defence\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--decode-folder=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Library\Burst
+--output=D:\Uni\Semester 4\Duo Project\tower-defense-duo-project\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ZBinningJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ZBinningJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--77fc393cb521ac129b1392d4eb94d29a
