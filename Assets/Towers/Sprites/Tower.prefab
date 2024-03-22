@@ -4944,5 +4944,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0cdc16fe4c0fc4c81e42020d10671f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalCost: 50
-  resourceCost: 52
+  crystalCost: 28
+  resourceCost: 27
