@@ -172,3 +172,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf31a41375a9584e8be662156be70fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crystalReward: 25
+  resourceReward: 40
