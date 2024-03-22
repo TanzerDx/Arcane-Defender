@@ -40,7 +40,7 @@ public class EnemyMover : MonoBehaviour
             Vector3 startPosition = transform.position;
             Vector3 endPosition = waypoint.transform.position;
 
-            startPosition.z = transform.position.z - 1;
+            startPosition.z = waypoint.transform.position.z - 1;
             endPosition.z = waypoint.transform.position.z - 1;
 
             float travelPercent = 0f;

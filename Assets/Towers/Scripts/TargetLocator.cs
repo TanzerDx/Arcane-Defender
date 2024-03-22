@@ -5,7 +5,7 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform tower;
-    [SerializeField] float shootingRange = 35f;
+    [SerializeField] float shootingRange = 1f;
     [SerializeField] ParticleSystem projectileParticles;
     Transform target;
 
@@ -37,6 +37,7 @@ public class TargetLocator : MonoBehaviour
 
     void AimAtEnemy() {
         float targetDistance = Vector2.Distance(transform.position, target.position);
+        projectileParticles.transform.LookAt(target);
 
         if(targetDistance < shootingRange)
         {
