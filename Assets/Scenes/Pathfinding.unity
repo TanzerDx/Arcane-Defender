@@ -4215,6 +4215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923244374}
   - component: {fileID: 923244373}
+  - component: {fileID: 923244375}
   m_Layer: 0
   m_Name: ObjectPool
   m_TagString: Untagged
@@ -4252,6 +4253,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923244375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923244372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1460d695594a1409c1ba3b94d8cf40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCoordinates: {x: 0, y: 0}
+  destinationCoordinates: {x: 3, y: 2}
 --- !u!1001 &924237865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8646,7 +8661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f83342f0a5e4340a3a44cc43e1cab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSize: {x: 4, y: 3}
+  gridSize: {x: 5, y: 5}
 --- !u!4 &1697517630
 Transform:
   m_ObjectHideFlags: 0
