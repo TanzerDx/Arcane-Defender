@@ -47,10 +47,14 @@ public class CoordinateLabeler : MonoBehaviour
 
     void DisplayCoordinates()
     {
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.y);
+        if (gridManager != null)
+        {
+            Vector3 opti = transform.parent.position;
+            coordinates.x = Mathf.RoundToInt(opti.x/gridManager.UnityGridSize);
+            coordinates.y = Mathf.RoundToInt(opti.y/gridManager.UnityGridSize);
 
-        label.text = $"{coordinates.x},{coordinates.y}";
+            label.text = $"{coordinates.x},{coordinates.y}";
+        }
     }
 
     void UpdateObjectName()
