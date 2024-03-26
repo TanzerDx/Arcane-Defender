@@ -5,13 +5,19 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform tower;
-    [SerializeField] float shootingRange = 35f;
-    [SerializeField] ParticleSystem projectileParticles;
+    [SerializeField] float shootingRange = 15f;
+    float targetDistance;
+    
+    [SerializeField] GameObject particlePrefab;
+    [SerializeField] float projectilesPerSecond = 1f;
+    float timeUntilFire = 0f;
+    
     Transform target;
 
     void Update() {
         FindClosestTarget();
         AimAtEnemy();
+        timeUntilFire += Time.deltaTime;
     }
 
     void FindClosestTarget() 
@@ -22,7 +28,7 @@ public class TargetLocator : MonoBehaviour
 
         foreach (Enemy enemy in enemies)
         {
-            float targetDistance = Vector2.Distance(transform.position, enemy.transform.position);
+            targetDistance = Vector2.Distance(transform.position, enemy.transform.position);
 
             if (targetDistance < maxDistance)
             {
@@ -30,17 +36,17 @@ public class TargetLocator : MonoBehaviour
 
                 maxDistance = targetDistance;
             }
-
-            target = closestTarget;
         }
+
+        target = closestTarget;
+        Debug.Log(maxDistance);
     }
 
     void AimAtEnemy() {
-        float targetDistance = Vector2.Distance(transform.position, target.position);
-
-        if(targetDistance < shootingRange)
+        if(targetDistance < shootingRange && timeUntilFire >= 1f / projectilesPerSecond)
         {
             Attack(true);
+            timeUntilFire = 0f;
         }
         else 
         {
@@ -51,7 +57,17 @@ public class TargetLocator : MonoBehaviour
 
     void Attack(bool isActive)
     {
-        var emissionModule = projectileParticles.emission;
-        emissionModule.enabled = isActive;
+        if(isActive)
+        {
+            GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+            Particle particleScript = particle.GetComponent<Particle>();
+            particleScript.SetTarget(target);
+        
+            // if(target.gameObject.activeInHierarchy)
+            // {
+            //     Destroy(particle);
+            // }
+        
+        }
     }
 }

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1307219805926354022, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_text
-      value: 4,2
+      value: 6,2
       objectReference: {fileID: 0}
     - target: {fileID: 1307219805926354022, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_fontColor.b
@@ -40,9 +40,17 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.6320754
       objectReference: {fileID: 0}
+    - target: {fileID: 5334760597850711834, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7754236348960129194, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_Name
       value: Path
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754236348960129194, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7754236348960129194, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_TagString
@@ -50,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405095386187383904, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8405095386187383904, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -119,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2626a2c5e637a4ca5a8a20644501fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 3925318814131133804, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-  playerPrefab: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+  towerPrefab: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+  playerPrefab: {fileID: 0}
   placeDistance: 3
   isPlaceable: 0
 --- !u!61 &-6214064148661286647
