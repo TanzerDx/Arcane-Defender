@@ -26,11 +26,8 @@ public class Particle : MonoBehaviour
 
         timeOfInitialization += Time.deltaTime;
 
-        Debug.Log(timeOfInitialization);
-
-        if (timeOfInitialization >= 1f)
+        if (timeOfInitialization >= 1f || !target.gameObject.activeInHierarchy)
         {
-            Debug.Log("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.destroyed ;3");
             Destroy(gameObject);
         }
     }

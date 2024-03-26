@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tower: {fileID: 8105183093119607366}
-  shootingRange: 5.89
+  shootingRange: 2.97
   particlePrefab: {fileID: 5776208147141108920, guid: 4acb32afa895405439f07cbb9051b8b2, type: 3}
   projectilesPerSecond: 1
 --- !u!114 &2726533630300398540

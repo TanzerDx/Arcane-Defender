@@ -62,6 +62,12 @@ public class TargetLocator : MonoBehaviour
             GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
             Particle particleScript = particle.GetComponent<Particle>();
             particleScript.SetTarget(target);
+        
+            // if(target.gameObject.activeInHierarchy)
+            // {
+            //     Destroy(particle);
+            // }
+        
         }
     }
 }
