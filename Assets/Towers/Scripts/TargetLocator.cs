@@ -5,12 +5,12 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform tower;
-    [SerializeField] float shootingRange = 1f;
+    [SerializeField] float shootingRange = 15f;
     float targetDistance;
     
     [SerializeField] GameObject particlePrefab;
     [SerializeField] float projectilesPerSecond = 1f;
-    float timeUntilFire;
+    float timeUntilFire = 0f;
     
     Transform target;
 
@@ -36,9 +36,9 @@ public class TargetLocator : MonoBehaviour
 
                 maxDistance = targetDistance;
             }
-
-            target = closestTarget;
         }
+
+        target = closestTarget;
     }
 
     void AimAtEnemy() {
@@ -56,8 +56,11 @@ public class TargetLocator : MonoBehaviour
 
     void Attack(bool isActive)
     {
-        GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
-        Particle particleScript = particle.GetComponent<Particle>();
-        particleScript.SetTarget(target);
+        if(isActive)
+        {
+            GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+            Particle particleScript = particle.GetComponent<Particle>();
+            particleScript.SetTarget(target);
+        }
     }
 }

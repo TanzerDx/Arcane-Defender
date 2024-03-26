@@ -26,7 +26,6 @@ public class EnemyHealth : MonoBehaviour
     void ProcessHit()
     {
         currentHitpoints--;
-        Debug.Log("The enemy has been hit! :D");
 
         if (currentHitpoints <= 0) {
             gameObject.SetActive(false);
