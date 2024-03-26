@@ -138,11 +138,12 @@ public class Pathfinder : MonoBehaviour
             grid[coordinates].isWalkable = false;
             List<Node> newPath = GetNewPath();
             grid[coordinates].isWalkable = previousState;
-
+            
+            //Resets the tiles to how they were before
+            GetNewPath();
+            
             if (newPath.Count <= 1)
             {
-                //Resets the tiles to how they were before
-                GetNewPath();
                 return true;
             }
 

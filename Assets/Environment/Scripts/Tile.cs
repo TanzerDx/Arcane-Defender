@@ -65,18 +65,26 @@ public class Tile : MonoBehaviour
             if (isTowerPlaced) {
                 isPlaceable = false;
             }*/
+            
+            Dictionary<Vector2Int, Node> grid = gridManager.Grid;
+            Vector2Int cord = gridManager.GetCoordinatesFromPosition(transform.position);
+            Debug.Log("isExplored: " + grid[cord].isExplored);
+            Debug.Log("isPath: " + grid[cord].isPath);
+            Debug.Log("isWalkable: " + grid[cord].isWalkable);
 
             float playerDistanceFromSquare = Vector2.Distance(transform.position, playerPrefab.transform.position);
 
             if (playerDistanceFromSquare <= placeDistance)
             {
-                bool isSuccessful = towerPrefab.CreateTower(towerPrefab, transform.position);
+                Vector3 opti = transform.position;
+                bool isSuccessful = towerPrefab.CreateTower(towerPrefab, new Vector3(opti.x, opti.y, opti.z -1));
                 if (isSuccessful)
                 {
                     gridManager.BlockNode(coordinates);
                     pathfinder.NotifyReceivers();
                 }
             }
+
         }
     }
 }
