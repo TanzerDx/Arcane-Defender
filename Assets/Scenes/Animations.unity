@@ -236,8 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91a41814f3d21843aa6fec3f69acfdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingCrystalBalance: 113
-  startingResourceBalance: 130
+  startingCrystalBalance: 300
+  startingResourceBalance: 150
   currentCrystalBalance: 0
   currentResourceBalance: 0
   displayCrystalBalance: {fileID: 713285819}
@@ -8254,7 +8254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5d40d36748a1a4ebad5ca073437e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6795468696226580729, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+  enemyPrefab: {fileID: 1029876457853218775, guid: 8f2076fad1a137849808d4c06e530a6a, type: 3}
   spawnTimer: 2
   poolSize: 5
 --- !u!4 &1533407773
