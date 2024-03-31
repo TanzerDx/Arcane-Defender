@@ -399,7 +399,6 @@ GameObject:
   m_Component:
   - component: {fileID: 720502963}
   - component: {fileID: 720502962}
-  - component: {fileID: 720502961}
   - component: {fileID: 720502960}
   m_Layer: 0
   m_Name: Camera
@@ -452,14 +451,6 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
---- !u!81 &720502961
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720502959}
-  m_Enabled: 1
 --- !u!20 &720502962
 Camera:
   m_ObjectHideFlags: 0
@@ -520,7 +511,7 @@ Transform:
   m_GameObject: {fileID: 720502959}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 858.1, y: 572.77, z: -1011.2218}
+  m_LocalPosition: {x: 858.1, y: 598.6, z: -1011.2218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -756,15 +747,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069546080}
   m_LocalRotation: {x: -0.68688804, y: -0.16788335, z: 0.16788335, w: 0.68688804}
-  m_LocalPosition: {x: 0, y: 0, z: 5.32}
-  m_LocalScale: {x: -1.5, y: -12.67, z: -1.6}
+  m_LocalPosition: {x: 0, y: 0, z: -68}
+  m_LocalScale: {x: -1.3652928, y: -9.396649, z: -0.743073}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1535379582}
+  m_Father: {fileID: 1598055870}
   m_LocalEulerAnglesHint: {x: -117.469, y: 90, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -179.9, y: 90}
+  m_AnchoredPosition: {x: -450.34402, y: 948}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!199 &1069546082
@@ -788,7 +779,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -808,7 +799,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -820,7 +811,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 0
+  m_RenderAlignment: 1
   m_Pivot: {x: 6.65, y: 0, z: 0}
   m_Flip: {x: 0, y: 1, z: 0}
   m_EnableGPUInstancing: 1
@@ -1031,7 +1022,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.12482201, g: 0.24526495, b: 0.4811321, a: 1}
+      maxColor: {r: 0, g: 0.16981131, b: 0.0692952, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5725,11 +5716,10 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535379581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -37}
-  m_LocalScale: {x: 6.16089, y: 10.928873, z: 2.9977}
+  m_LocalPosition: {x: 0, y: 0, z: -146}
+  m_LocalScale: {x: 5.343956, y: 9.479705, z: 2.600205}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1069546081}
   - {fileID: 735390545}
   - {fileID: 510559966}
   - {fileID: 681252673}
@@ -5737,7 +5727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -302, y: 0}
+  m_AnchoredPosition: {x: -387, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1535379583
@@ -5753,7 +5743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5176471}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.84313726}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5867,7 +5857,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: -1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -5886,6 +5876,7 @@ RectTransform:
   m_Children:
   - {fileID: 1666709131}
   - {fileID: 1535379582}
+  - {fileID: 1069546081}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6113,6 +6104,7 @@ GameObject:
   - component: {fileID: 2121518590}
   - component: {fileID: 2121518589}
   - component: {fileID: 2121518591}
+  - component: {fileID: 2121518592}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6231,6 +6223,14 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!81 &2121518592
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121518587}
+  m_Enabled: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
