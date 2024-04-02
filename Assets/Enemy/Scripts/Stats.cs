@@ -3,20 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO : Maybe need to checkout GameDev.tv (Again...) to see what the serialization of a class is for
+[System.Serializable]
 public class Stats
 {
+    //IMPORTANT: The stats that can easily be accessed outside of the class are :
+    // - Health
+    // - Move speed
+    // - Damage
+    // - Is Stunned
+    // - Is Slowed
+    // - Is Poisoned
+
     //Base stats
     [Tooltip("The current health of the monster")]
     private int health;
+    public int Health
+    {
+        get { return health; }
+    }
+    
     [Tooltip("The move speed of the monster (1 being the base speed)")]
     private float moveSpeed;
     public float MoveSpeed
     {
         get { return moveSpeed; }
     }
-    
     [Tooltip("The base speed of the enemy")]
     private float speedSaver;
+    
+    
     [Tooltip("The amount of damage dealt to the player")]
     private int damage;
     public int Damage
@@ -31,33 +47,17 @@ public class Stats
     private float magicResistance;
     
     //Crowd Control resistances
-    [Tooltip("The proportion of stun duration applied (1 = No resistance || 0 = Immunity)")]
-    private float stunResist;
     [Tooltip("The proportion of slow duration applied (1 = No resistance || 0 = Immunity)")]
     private float slowResist;
-    [Tooltip("The proportion of poison duration applied (1 = No resistance || 0 = Immunity)")]
-    private float poisonResist;
     
-    [Tooltip("Is this monster currently stunned?")]
-    private bool isStunned;
-    public bool IsStunned
-    {
-        get { return isStunned; }
-    }
+    
     [Tooltip("Is this monster currently slowed?")]
     private bool isSlowed;
     public bool IsSlowed
     {
         get { return isSlowed; }
     }
-    [Tooltip("Is this monster currently poisoned?")]
-    private bool isPoisoned;
 
-    private int poisonPotency;
-    public bool IsPoisoned
-    {
-        get { return isPoisoned; }
-    }
     
     //Other & miscellaneous
     [Tooltip("The damage multiplier of this enemy. 1 Is the default value (no damage modification)")]
@@ -65,8 +65,8 @@ public class Stats
 
 
 
-    public Stats(int _health, float _moveSpeed, int _damage, float _physResistance, float _magicResistance,
-        float _stunResist, float _slowResist, float _poisonResist)
+    public Stats(int _health, float _moveSpeed, int _damage, float _physResistance, float _magicResistance, 
+        float _slowResist)
     {
         health = _health;
         moveSpeed = _moveSpeed;
@@ -75,15 +75,11 @@ public class Stats
         
         physResistance = _physResistance;
         magicResistance = _magicResistance;
-        stunResist = _stunResist;
         slowResist = _slowResist;
-        poisonResist = _poisonResist;
-        
-        damageMultiplier = 1f;
 
-        isStunned = false;
+        damageMultiplier = 1f;
+        
         isSlowed = false;
-        isPoisoned = false;
     }
     
     
@@ -101,15 +97,12 @@ public class Stats
 
         return health;
     }
-    
-    
 
-    public float GetStunned(float duration)
+    public void ResetHealth(int maxHp)
     {
-        isStunned = true;
-        moveSpeed = 0;
-        return duration * stunResist;
+        health = maxHp;
     }
+    
     
     public float GetSlowed(float duration, float intensity)
     {
@@ -118,18 +111,7 @@ public class Stats
         return duration * slowResist;
     }
     
-    public float GetPoisoned(float duration, int potency)
-    {
-        isPoisoned = true;
-        poisonPotency = potency;
-        return duration * poisonResist;
-    }
-
-    public void EndStun()
-    {
-        isStunned = false;
-        moveSpeed = speedSaver;
-    }
+    
     
     public void EndSlow()
     {
@@ -137,9 +119,5 @@ public class Stats
         moveSpeed = speedSaver;
     }
     
-    public void EndPoison()
-    {
-        isPoisoned = false;
-    }
 
 }

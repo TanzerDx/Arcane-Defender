@@ -4,30 +4,31 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] int maxHitpoints = 5;
-    [SerializeField] int currentHitpoints = 0;
+    [Tooltip("This should be the same as the \"health\" parameter in the Enemy script")]
+    int maxHitpoints;
+    //[SerializeField] int currentHitpoints = 0;
 
     Enemy enemy;
 
-    void Start() {
+    void Awake() {
         enemy = GetComponent<Enemy>();
+        maxHitpoints = enemy.EnemyStats.Health;
     }
 
     void OnEnable()
     {
-        currentHitpoints = maxHitpoints;
+        enemy.EnemyStats.ResetHealth(maxHitpoints);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         ProcessHit();
+        //TODO: We'll need to modify this to take into account the various projectiles of the towers
     }
 
     void ProcessHit()
     {
-        currentHitpoints--;
-
-        if (currentHitpoints <= 0) {
+        if (enemy.EnemyStats.TakingDamage(1, true) <= 0) {
             gameObject.SetActive(false);
             enemy.Reward();
         }
