@@ -8,7 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Enemy))]
 public class EnemyMover : MonoBehaviour
 {
-    [SerializeField] [Range(0f, 5f)] private float speed = 1f;
+    //[SerializeField] [Range(0f, 5f)] private float speed = 1f;
     
     List<Node> path = new List<Node>();
 
@@ -69,7 +69,7 @@ public class EnemyMover : MonoBehaviour
 
             while(travelPercent < 1f)
             {
-                travelPercent += Time.deltaTime * speed;
+                travelPercent += Time.deltaTime * enemy.EnemyStats.MoveSpeed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
 
                 yield return new WaitForEndOfFrame();

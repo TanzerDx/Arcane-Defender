@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5ec913aef90c14289898ed01c3e95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!61 &4318533336727728236
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -160,8 +159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0060c6a652328604690ef6543bf750e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitpoints: 5
-  currentHitpoints: 0
 --- !u!114 &4341492342434477697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,8 +171,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf31a41375a9584e8be662156be70fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalReward: 25
-  resourceReward: 40
+  crystalReward: 5
+  resourceReward: 15
+  health: 10
+  moveSpeed: 1
+  damage: 1
+  physRes: 1
+  magicRes: 1
+  slowRes: 1
 --- !u!95 &1318368457926061830
 Animator:
   serializedVersion: 5
