@@ -8419,6 +8419,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: towerPrefab
       value: 
       objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
@@ -9555,6 +9559,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1307219805926354022, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
+      propertyPath: isPlaceable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
