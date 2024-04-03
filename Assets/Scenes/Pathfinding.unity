@@ -4439,7 +4439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5d40d36748a1a4ebad5ca073437e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6795468696226580729, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+  enemyPrefab: {fileID: 6902920244284080295, guid: d5267d038adb3884591d960b96f126b4, type: 3}
   spawnTimer: 2
   poolSize: 5
 --- !u!4 &923244374
@@ -10431,6 +10431,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6676410543944124887, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 264
+      objectReference: {fileID: 0}
     - target: {fileID: 2712776350845923296, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.975655
@@ -10471,9 +10475,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6305644025798690169, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 264
+      objectReference: {fileID: 0}
     - target: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

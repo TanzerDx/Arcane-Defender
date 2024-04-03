@@ -12,9 +12,13 @@ public class EnemyMover : MonoBehaviour
     List<Node> path = new List<Node>();
 
     Enemy enemy;
+    GameObject player;
     GridManager gridManager;
     Pathfinder pathfinder;
-    
+
+    EnemyAttack enemyAttack;
+
+    float distanceFromPlayer;
     
 
     void OnEnable()
@@ -28,12 +32,31 @@ public class EnemyMover : MonoBehaviour
         enemy = GetComponent<Enemy>();
         gridManager = FindObjectOfType<GridManager>();
         pathfinder = FindObjectOfType<Pathfinder>();
+        
+        enemyAttack = GetComponent<EnemyAttack>();
+
+        player = GameObject.FindWithTag("Player");
+
     }
+
+    // void Update()
+    // {
+    //     distanceFromPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+    //     if(distanceFromPlayer < 2f)
+    //     {
+    //         FollowPlayer(true);
+    //     }
+    //     else
+    //     {
+    //         FollowPlayer(true);
+    //     }
+    // }
 
     void RecalculatePath(bool resetPath)
     {
         Vector2Int coordinates = new Vector2Int();
-
+        
         if (resetPath)
         {
             coordinates = pathfinder.StartCoordinates;
@@ -71,11 +94,23 @@ public class EnemyMover : MonoBehaviour
                 travelPercent += Time.deltaTime * enemy.EnemyStats.MoveSpeed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
 
-                yield return new WaitForEndOfFrame();
-            }
-                        
+                yield return new WaitForEndOfFrame();       
+            }                
         }
 
         gameObject.SetActive(false);
     }
+
+    // void FollowPlayer(bool isInRange)
+    // {
+    //     if(isInRange)
+    //     {
+    //         StopAllCoroutines();
+    //         path.Clear();
+
+    //         enemyAttack.TargetPlayer(); 
+    //     }
+
+    //     RecalculatePath(false);
+    // }
 }

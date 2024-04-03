@@ -21,6 +21,10 @@ PrefabInstance:
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4318533336727728236, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4318533336727728236, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 4
       objectReference: {fileID: 0}
@@ -35,6 +39,18 @@ PrefabInstance:
     - target: {fileID: 6795468696226580729, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_Name
       value: Deer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285520632996110871, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2595881
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285520632996110871, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2595881
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285520632996110871, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2595881
       objectReference: {fileID: 0}
     - target: {fileID: 8285520632996110871, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_LocalPosition.x
