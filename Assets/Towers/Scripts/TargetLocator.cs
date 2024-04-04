@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,14 +6,22 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform tower;
-    [SerializeField] float shootingRange = 15f;
+    //[SerializeField] float shootingRange = 15f;
     float targetDistance;
     
     [SerializeField] GameObject particlePrefab;
-    [SerializeField] float projectilesPerSecond = 1f;
+    //[SerializeField] float projectilesPerSecond = 1f;
     float timeUntilFire = 0f;
     
     Transform target;
+
+    [SerializeField] private Tower link;
+    private TowerData data;
+
+    private void Start()
+    {
+        data = link.Data;
+    }
 
     void Update() {
         FindClosestTarget();
@@ -43,7 +52,7 @@ public class TargetLocator : MonoBehaviour
     }
 
     void AimAtEnemy() {
-        if(targetDistance < shootingRange && timeUntilFire >= 1f / projectilesPerSecond)
+        if(targetDistance < data.Range && timeUntilFire >= 1f / data.AttackSpeed)
         {
             Attack(true);
             timeUntilFire = 0f;
