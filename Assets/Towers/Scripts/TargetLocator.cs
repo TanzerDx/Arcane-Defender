@@ -37,9 +37,8 @@ public class TargetLocator : MonoBehaviour
                 maxDistance = targetDistance;
             }
         }
-
+        
         target = closestTarget;
-        Debug.Log(maxDistance);
     }
 
     void AimAtEnemy() {

@@ -4,29 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float playerHealth = 10f;
-    [SerializeField] float playerDamage = 2f;
+    [SerializeField] int playerHealth = 10;
+    
+    public int GetPlayerHealth { get { return playerHealth; }}
 
-    public float GetPlayerHealth
-    {
-        get { return playerHealth; }
-    }
-
-    public float SetPlayerHealth(float newPlayerHealth)
-    {
+    public int SetPlayerHealth(int newPlayerHealth){
         playerHealth = newPlayerHealth;
-
         return playerHealth;
     }
+    
 
-        public float PlayerDamage
-    {
-        get { return playerDamage; }
-    }
+    [SerializeField] int playerDamage = 2;
+    public int GetPlayerDamage { get { return playerDamage; }}
+
+
 
     void Update()
     {
-        if(playerHealth <= 0f)
+        if(playerHealth <= 0)
         {
             gameObject.SetActive(false);
         }

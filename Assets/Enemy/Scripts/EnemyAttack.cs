@@ -21,9 +21,9 @@ public class EnemyAttack : MonoBehaviour
             timeBetweenHit += Time.deltaTime;
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        if(other.CompareTag("Player") && timeBetweenHit >= 1f)
+        if(collision.gameObject.tag == "Player" && timeBetweenHit >= 1f)
         {
             player.SetPlayerHealth(player.GetPlayerHealth - enemy.EnemyStats.Damage);
             timeBetweenHit = 0f;
