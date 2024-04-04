@@ -84,6 +84,9 @@ public class Stats
     
     
 
+    //This method deduces "amount" health from the enemy health.
+    //The damage type needs to be provided in order to compute the actual damage received
+    //This method returns the remaining amount of HP the enemy has (hp <= 0 means the enemy is dead)
     public int TakingDamage(int amount, bool physical)
     {
         if (physical)
@@ -98,12 +101,18 @@ public class Stats
         return health;
     }
 
+    
+    //Puts the enemy's health to its maximum
     public void ResetHealth(int maxHp)
     {
         health = maxHp;
     }
     
     
+    //Apply a slow debuff to the enemy for "duration" seconds
+    //The speed reduction is determined by "intensity"
+    //0 locking the enemy in place and 1 doing nothing
+    //This method returns the total duration of the effect (enemies can be resilient to slow effects)
     public float GetSlowed(float duration, float intensity)
     {
         isSlowed = true;
@@ -113,6 +122,7 @@ public class Stats
     
     
     
+    //Reverts the enemies speed to its default value
     public void EndSlow()
     {
         isSlowed = false;
