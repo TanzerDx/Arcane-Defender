@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TargetLocator : MonoBehaviour
 {
-    [SerializeField] Transform tower;
+    //[SerializeField] Transform tower;
     //[SerializeField] float shootingRange = 15f;
     float targetDistance;
     
