@@ -47,11 +47,34 @@ public class Enemy : MonoBehaviour
         bank = FindObjectOfType<Bank>();
     }
 
+    void OnEnable()
+    {
+        stats.ResetHealth(health);
+    }
+
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Particle")
+        {
+            ProcessHit(1, true);
+        }
+        //TODO: We'll need to modify this to take into account the various projectiles of the towers
+    }
+
     public void Reward()
     {
         if(bank != null)
         {
             bank.Deposit(crystalReward, resourceReward);
+        }
+    }
+
+    public void ProcessHit(int damage, bool isPhysical)
+    {
+        if (stats.TakingDamage(damage, isPhysical) <= 0) {
+            gameObject.SetActive(false);
+            Reward();
         }
     }
 

@@ -8,7 +8,11 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
 
     public LayerMask enemies;
+    Player player;
 
+    private void Awake() {
+        player = GetComponent<Player>();
+    }
 
     void Update()
     {
@@ -21,12 +25,12 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //Play attack animation
-        //Detect enemies in range of attack
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemies);
         
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>().ProcessHitFromPlayer(); 
+            enemy.GetComponent<Enemy>().ProcessHit(player.GetPlayerDamage, true); 
         }
     }
 
