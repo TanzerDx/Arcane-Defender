@@ -145,10 +145,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -225,10 +221,6 @@ PrefabInstance:
       value: 7,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -296,10 +288,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 13,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -374,10 +362,6 @@ PrefabInstance:
       value: 4,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -449,10 +433,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -530,10 +510,6 @@ PrefabInstance:
       value: 0,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -607,10 +583,6 @@ PrefabInstance:
       value: 0,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -678,10 +650,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 5,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -850,10 +818,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -955,10 +919,6 @@ PrefabInstance:
       value: 5,6
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1032,10 +992,6 @@ PrefabInstance:
       value: 13,6
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1103,10 +1059,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 14,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1191,10 +1143,6 @@ PrefabInstance:
       value: 2,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1262,10 +1210,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 14,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1350,10 +1294,6 @@ PrefabInstance:
       value: 7,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1421,10 +1361,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 0,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1573,10 +1509,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1661,10 +1593,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1752,10 +1680,6 @@ PrefabInstance:
       value: 1,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1824,10 +1748,6 @@ PrefabInstance:
       value: 5,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -1895,10 +1815,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 11,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -1977,10 +1893,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2057,10 +1969,6 @@ PrefabInstance:
       value: 6,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2129,10 +2037,6 @@ PrefabInstance:
       value: 1,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2200,10 +2104,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 8,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -2278,10 +2178,6 @@ PrefabInstance:
       value: 8,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2349,10 +2245,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 9,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -2426,10 +2318,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 16,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -2551,10 +2439,6 @@ PrefabInstance:
       value: 3,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2628,10 +2512,6 @@ PrefabInstance:
       value: 14,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2699,10 +2579,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 6,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -2792,10 +2668,6 @@ PrefabInstance:
       value: 2,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2874,10 +2746,6 @@ PrefabInstance:
       value: 6,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -2945,10 +2813,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 15,1
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -3037,10 +2901,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3117,10 +2977,6 @@ PrefabInstance:
       value: 14,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3188,10 +3044,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 9,1
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -3261,10 +3113,6 @@ PrefabInstance:
       value: 3,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3333,10 +3181,6 @@ PrefabInstance:
       value: 13,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3404,10 +3248,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 15,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -3487,10 +3327,6 @@ PrefabInstance:
       value: 5,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3559,10 +3395,6 @@ PrefabInstance:
       value: 15,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3630,10 +3462,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 15,0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -3822,10 +3650,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3911,10 +3735,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -3995,10 +3815,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 14,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4102,10 +3918,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -4185,10 +3997,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4270,10 +4078,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -4349,10 +4153,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 10,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4484,10 +4284,6 @@ PrefabInstance:
       value: 6,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -4555,10 +4351,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 15,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4632,10 +4424,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 14,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4719,10 +4507,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 13,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4833,10 +4617,6 @@ PrefabInstance:
       value: 9,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -4904,10 +4684,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 9,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -4982,10 +4758,6 @@ PrefabInstance:
       value: 10,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5057,10 +4829,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -5148,10 +4916,6 @@ PrefabInstance:
       value: 0,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5234,10 +4998,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5314,10 +5074,6 @@ PrefabInstance:
       value: 9,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5385,10 +5141,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 8,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -5458,10 +5210,6 @@ PrefabInstance:
       value: 8,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5530,10 +5278,6 @@ PrefabInstance:
       value: 12,6
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5601,10 +5345,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 2,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -5684,10 +5424,6 @@ PrefabInstance:
       value: 4,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5755,10 +5491,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 12,0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -5833,10 +5565,6 @@ PrefabInstance:
       value: 7,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5910,10 +5638,6 @@ PrefabInstance:
       value: 7,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -5981,10 +5705,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 7,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -6201,10 +5921,6 @@ PrefabInstance:
       value: 9,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -6277,10 +5993,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 2,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -6360,10 +6072,6 @@ PrefabInstance:
       value: 4,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -6441,10 +6149,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 12,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -6548,10 +6252,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -6768,10 +6468,6 @@ PrefabInstance:
       value: 3,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -6839,10 +6535,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 15,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -6927,10 +6619,6 @@ PrefabInstance:
       value: 12,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -6998,10 +6686,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 2,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -7071,10 +6755,6 @@ PrefabInstance:
       value: 16,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7142,10 +6822,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 11,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -7220,10 +6896,6 @@ PrefabInstance:
       value: 11,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7291,10 +6963,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 10,5
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -7372,10 +7040,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -7457,10 +7121,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7537,10 +7197,6 @@ PrefabInstance:
       value: 15,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7614,10 +7270,6 @@ PrefabInstance:
       value: 16,3
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7690,10 +7342,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 11,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -7914,10 +7562,6 @@ PrefabInstance:
       value: 7,6
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -7986,10 +7630,6 @@ PrefabInstance:
       value: 11,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8057,10 +7697,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,4
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -8138,10 +7774,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -8223,10 +7855,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8302,10 +7930,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 13,0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -8405,10 +8029,6 @@ PrefabInstance:
       value: 5,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8490,10 +8110,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8574,10 +8190,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -8661,10 +8273,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 10,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -8785,10 +8393,6 @@ PrefabInstance:
       value: 7,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8867,10 +8471,6 @@ PrefabInstance:
       value: 10,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -8938,10 +8538,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 2,1
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9015,10 +8611,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 12,5
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9098,10 +8690,6 @@ PrefabInstance:
       value: 13,1
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -9169,10 +8757,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 16,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9251,10 +8835,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 5,5
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9378,10 +8958,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 5,3
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9553,10 +9129,6 @@ PrefabInstance:
       value: 13,5
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -9633,10 +9205,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -9712,10 +9280,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 3,1
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -9960,10 +9524,6 @@ PrefabInstance:
       value: 8,4
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -10035,10 +9595,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -10116,10 +9672,6 @@ PrefabInstance:
       value: 6,2
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -10187,10 +9739,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 4,6
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -10265,10 +9813,6 @@ PrefabInstance:
       value: 2,6
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -10340,10 +9884,6 @@ PrefabInstance:
       propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -10426,10 +9966,6 @@ PrefabInstance:
       value: 9,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -10506,10 +10042,6 @@ PrefabInstance:
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 1008063927}
-    - target: {fileID: -4835170622368553988, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
-      propertyPath: attackRange
-      value: 0.47
-      objectReference: {fileID: 0}
     - target: {fileID: -4835170622368553988, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
       propertyPath: enemies.m_Bits
       value: 8
@@ -10628,10 +10160,6 @@ PrefabInstance:
       value: 3,0
       objectReference: {fileID: 0}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 1633437546}
@@ -10699,10 +10227,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 14,5
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 
@@ -10776,10 +10300,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 4,2
       objectReference: {fileID: 0}
-    - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
-      propertyPath: towerPrefab
-      value: 
-      objectReference: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
     - target: {fileID: 6480831209508473777, guid: ab72b81b29f4e2243ae51b035bae56b9, type: 3}
       propertyPath: playerPrefab
       value: 

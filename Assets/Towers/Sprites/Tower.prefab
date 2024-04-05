@@ -117,20 +117,20 @@ MonoBehaviour:
   damage: 0
   damageUp1: 0
   damageUp2: 0
-  crystalsCost: 0
+  crystalsCost: 5
   crystalsLvUpCost1: 0
   crystalsLvUpCost2: 0
-  resourcesCost: 0
+  resourcesCost: 5
   resourceLvUpCost1: 0
   resourceLvUpCost2: 0
-  range: 0
+  range: 3
   rangeUp1: 0
   rangeUp2: 0
-  attackSpeed: 0
+  attackSpeed: 3
   attackSpeedUp1: 0
   attackSpeedUp2: 0
-  category: 
-  physical: 0
+  category: Model
+  physical: 1
 --- !u!61 &3752508951919672759
 BoxCollider2D:
   m_ObjectHideFlags: 0
