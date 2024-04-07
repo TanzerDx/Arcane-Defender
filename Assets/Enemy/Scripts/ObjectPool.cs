@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,23 +17,18 @@ public class ObjectPool : MonoBehaviour
 
     void Awake()
     {
-        PopulatePool();
         currentWave = new GameObject[] { };
+        pool = new GameObject[] { };
     }
-
-    void Start()
-    {
-        StartCoroutine(InstantiateEnemies());
-    }
+    
 
     void PopulatePool()
     {
-
         pool = new GameObject[poolSize];
 
         for (int i = 0; i < poolSize; i++)
         {
-            pool[i] = Instantiate(enemyPrefab, transform);
+            pool[i] = Instantiate(currentWave[i], transform);
             pool[i].SetActive(false);
         }
     }
@@ -43,7 +39,14 @@ public class ObjectPool : MonoBehaviour
 
     public void LaunchNewWave(GameObject[] wave)
     {
+        foreach (GameObject enemy in pool)
+        {
+            Destroy(enemy);
+        }
         poolSize = wave.Length;
+        currentWave = wave;
+        PopulatePool();
+        StartCoroutine(InstantiateEnemies());
     }
 
     void EnableObjectInPool()

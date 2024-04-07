@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour
 {
-    public int wave = 1;
+    public int wave = 0;
 
     private Queue<GameObject[]> waves = new Queue<GameObject[]>();
     [SerializeField] private Button StartWave;
@@ -40,6 +40,7 @@ public class WaveManager : MonoBehaviour
 
     public void LaunchWave()
     {
+        wave += 1;
         Debug.Log("It's clicked");
         StartWave.interactable = false;
         GameObject[] currentWave = waves.Dequeue();
