@@ -7,35 +7,35 @@ public class TowerData
     //Tower level
     [Tooltip("The current level of the tower 0 being a non-upgraded tower")]
     private int level;
-    
-    
+
+
     //Tower's damage stat depending on current level
     [Tooltip("Base damage of the tower, updated if upgraded")]
     private int damage;
-    
+
     [Tooltip("Damage gained after upgrading a tower to level 1")]
     private int damageUp1;
-    
+
     [Tooltip("Damage gained after upgrading a tower to level 2")]
     private int damageUp2;
     public int Damage
     {
         get { return damage; }
     }
-    
-    
+
+
     //Tower and upgrades costs
     [Tooltip("Base cost of the tower (crystals, resources)")]
     private (int crystals, int resources) cost;
-    
+
     [Tooltip("Cost of the first upgrade (crystals, resources)")]
     private (int crystals, int resources) lvUpCost1;
-    
+
     [Tooltip("Cost of the second upgrade (crystals, resources)")]
     private (int crystals, int resources) lvUpCost2;
 
-    
-    
+
+
     //Tower range depending on current level
     [Tooltip("Base range of the tower, updated if upgraded (1 range = 1 square)")]
     private float range;
@@ -43,14 +43,14 @@ public class TowerData
     {
         get { return range; }
     }
-    
+
     [Tooltip("Range gained after upgrading a tower to level 1")]
     private float rangeUp1;
-    
+
     [Tooltip("Range gained after upgrading a tower to level 2")]
     private float rangeUp2;
-    
-    
+
+
     //Tower attack speed depending on current level
     [Tooltip("Number of attacks per second")]
     private float attackSpeed;
@@ -58,14 +58,14 @@ public class TowerData
     {
         get { return attackSpeed; }
     }
-    
+
     [Tooltip("Attack speed gained after upgrading a tower to level 1")]
     private float attackSpeedUp1;
-    
+
     [Tooltip("Attack speed gained after upgrading a tower to level 2")]
     private float attackSpeedUp2;
 
-    
+
     //Tower category
     [Tooltip("The category this tower belongs in")]
     private string category;
@@ -74,7 +74,7 @@ public class TowerData
         get { return category; }
     }
 
-    
+
     //Tower damage type
     [Tooltip("Is the tower dealing physical damage? If false, the tower is dealing magical damage")]
     private bool physical;
@@ -83,12 +83,12 @@ public class TowerData
         get { return physical; }
     }
 
-    
+
     //Tower sell ratio
     [Tooltip("The proportion of a tower's total cost refunded to the player when selling")]
     private float sellRatio;
 
-    public TowerData((int, int, int) _damage, (int, int, int ) _crysCosts, (int, int, int ) _ressCosts,
+    public TowerData((int, int, int) _damage, (int, int, int) _crysCosts, (int, int, int) _ressCosts,
         (float, float, float) _ranges, (float, float, float) _speed, string _category, bool _dmgType)
     {
         level = 0;
@@ -104,11 +104,11 @@ public class TowerData
 
 
     //This method returns the amount of crystals and resources a player gets by selling a tower
-    public (int,int) Sell()
+    public (int, int) Sell()
     {
         (int, int) tot = cost;
 
-        if(level >= 1)
+        if (level >= 1)
         {
             tot.Item1 += lvUpCost1.Item1;
             tot.Item2 += lvUpCost1.Item2;
@@ -142,30 +142,28 @@ public class TowerData
             price = lvUpCost2;
         }
 
-        if (price.Item1 <= money.Item1 && price.Item2 <= money.Item2)
+        if (price.Item1 > money.Item1 && price.Item2 > money.Item2)
         {
-            level += 1;
-            if (level == 1)
-            {
-                damage += damageUp1;
-                range += rangeUp1;
-                attackSpeed += attackSpeedUp1;
-            }
-            else
-            {
-                damage += damageUp2;
-                range += rangeUp2;
-                attackSpeed += attackSpeedUp2;
-            }
+            return (0, 0);
+        }
 
-            return price;
+        level += 1;
+        if (level == 1)
+        {
+            damage += damageUp1;
+            range += rangeUp1;
+            attackSpeed += attackSpeedUp1;
         }
         else
         {
-            return (0,0);
+            damage += damageUp2;
+            range += rangeUp2;
+            attackSpeed += attackSpeedUp2;
         }
+
+        return price;
     }
-    
-    
-    
+
+
+
 }
