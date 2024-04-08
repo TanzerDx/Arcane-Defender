@@ -6,7 +6,7 @@ public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform tower;
     [SerializeField] float shootingRange = 15f;
-    float targetDistance;
+    List<GameObject> enemies = new List<GameObject>();
     
     [SerializeField] GameObject particlePrefab;
     [SerializeField] float projectilesPerSecond = 1f;
@@ -14,27 +14,45 @@ public class TargetLocator : MonoBehaviour
     
     Transform target;
 
+    ObjectPool objectPool;
+
+    void Awake() {
+        objectPool = FindObjectOfType<ObjectPool>();
+    }
+
     void Update() {
         FindClosestTarget();
         AimAtEnemy();
         timeUntilFire += Time.deltaTime;
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+            Debug.Log(other.gameObject);
+
+            enemies.Add(other.gameObject);
+            Debug.Log("Enemy added!");
+    }
+
+    void OnTriggerExit2D(Collider2D other) {
+            enemies.Remove(other.gameObject);
+            Debug.Log("Enemy removed!");
+    
     }
 
     void FindClosestTarget() 
     {
-        Enemy[] enemies = FindObjectsOfType<Enemy>();
         Transform closestTarget = null;
         float maxDistance = Mathf.Infinity;
 
-        foreach (Enemy enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
-            targetDistance = Vector2.Distance(transform.position, enemy.transform.position);
+            float enemyDistance = Vector2.Distance(transform.position, enemy.transform.position);
 
-            if (targetDistance < maxDistance)
+            if (enemyDistance < maxDistance)
             {
                 closestTarget = enemy.transform;
-
-                maxDistance = targetDistance;
+                maxDistance = enemyDistance;
             }
         }
         
@@ -42,10 +60,18 @@ public class TargetLocator : MonoBehaviour
     }
 
     void AimAtEnemy() {
+        if(enemies.Count == 0)
+        {
+            return;
+        }
+
+        float targetDistance = Vector2.Distance(transform.position, target.position);
+
         if(targetDistance < shootingRange && timeUntilFire >= 1f / projectilesPerSecond)
         {
             Attack(true);
             timeUntilFire = 0f;
+            
         }
         else 
         {

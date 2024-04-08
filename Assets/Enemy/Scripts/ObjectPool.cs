@@ -10,6 +10,10 @@ public class ObjectPool : MonoBehaviour
 
     GameObject[] pool;
 
+    public GameObject[] GetPool {
+        get {return pool;}
+    }
+
     void Awake() {
         PopulatePool();
     }
