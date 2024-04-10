@@ -19,12 +19,19 @@ public class WaveManager : MonoBehaviour
 
     [SerializeField] private ObjectPool reference;
 
+    [SerializeField] private int crystalBonus = 3;
+    [SerializeField] private int resourceBonus = 2;
+
     private float timerBeforNextWave = 0;
+
+    private Bank bank;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        bank = FindObjectOfType<Bank>();
+        
         reference.OnWaveSpawned += SetTimer;
         
         waves.Enqueue(wave1);
@@ -61,6 +68,7 @@ public class WaveManager : MonoBehaviour
             StartWave.interactable = false;
             GameObject[] currentWave = waves.Dequeue();
             ButtonText.text = "Wave " + wave;
+            bank.Deposit(crystalBonus*(int)timerBeforNextWave, resourceBonus*(int)timerBeforNextWave);
             reference.LaunchNewWave(currentWave);
         }
         else
