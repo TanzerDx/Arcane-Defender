@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public event EventHandler OnEnemyKilled;
+    //public event EventHandler OnEnemyKilled;
     
     [SerializeField] int crystalReward = 25;
     [SerializeField] int resourceReward = 40;
@@ -44,14 +44,6 @@ public class Enemy : MonoBehaviour
         stats = new Stats(health, moveSpeed, damage, physRes, magicRes, slowRes);
     }
 
-    public void OnDisable()
-    {
-        if (OnEnemyKilled != null)
-        {
-            OnEnemyKilled(this, EventArgs.Empty);
-        }
-    }
-
     void Start()
     {
         bank = FindObjectOfType<Bank>();
@@ -84,8 +76,8 @@ public class Enemy : MonoBehaviour
     {
         if (stats.TakingDamage(damage, isPhysical) <= 0) {
             //Destroy(gameObject);
-            gameObject.SetActive(false);
             Reward();
+            Destroy(gameObject);
         }
     }
 

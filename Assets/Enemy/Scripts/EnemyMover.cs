@@ -98,7 +98,7 @@ public class EnemyMover : MonoBehaviour
             }                
         }
 
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     // void FollowPlayer(bool isInRange)
