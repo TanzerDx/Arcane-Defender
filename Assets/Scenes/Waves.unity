@@ -5133,7 +5133,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 6902920244284080295, guid: d5267d038adb3884591d960b96f126b4, type: 3}
   spawnTimer: 2
   poolSize: 5
-  StartWave: {fileID: 0}
+  StartWave: {fileID: 1699187283}
 --- !u!4 &1173114425
 Transform:
   m_ObjectHideFlags: 0
@@ -5188,7 +5188,7 @@ MonoBehaviour:
   - {fileID: 1753902661904866331, guid: 34a80c69adfe73c479ea37b37a462f04, type: 3}
   - {fileID: 1753902661904866331, guid: 34a80c69adfe73c479ea37b37a462f04, type: 3}
   - {fileID: 1753902661904866331, guid: 34a80c69adfe73c479ea37b37a462f04, type: 3}
-  reference: {fileID: 0}
+  reference: {fileID: 1173114424}
 --- !u!1001 &1180348683
 PrefabInstance:
   m_ObjectHideFlags: 0
