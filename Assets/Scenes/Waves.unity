@@ -5134,6 +5134,7 @@ MonoBehaviour:
   spawnTimer: 2
   poolSize: 5
   StartWave: {fileID: 1699187283}
+  ButtonText: {fileID: 1016129089}
 --- !u!4 &1173114425
 Transform:
   m_ObjectHideFlags: 0
@@ -5161,8 +5162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895d8de2de675b7429a4f5cb7b177475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave: 1
+  wave: 0
   StartWave: {fileID: 1699187283}
+  ButtonText: {fileID: 1016129089}
   wave1:
   - {fileID: 1029876457853218775, guid: 8f2076fad1a137849808d4c06e530a6a, type: 3}
   - {fileID: 1029876457853218775, guid: 8f2076fad1a137849808d4c06e530a6a, type: 3}
