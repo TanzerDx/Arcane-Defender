@@ -22,7 +22,13 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private Text ButtonText;
 
 
-    //private int enemyOnScreen = 0;
+    public GameObject[] GetPool {
+        get {return pool;}
+    }
+
+    void Awake() {
+        PopulatePool();
+    }
 
     //private bool isWaveGoing = false;
 
