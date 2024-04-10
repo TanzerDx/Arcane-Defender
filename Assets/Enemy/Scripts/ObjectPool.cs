@@ -10,9 +10,13 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] float spawnTimer = 3f;
     [SerializeField] int poolSize = 1;
+    
     [SerializeField] private Button StartWave;
+    [SerializeField] private Text ButtonText;
 
-    private bool isWaveSpawning = false;
+
+    private int enemyOnScreen = 0;
+
     private bool isWaveGoing = false;
 
     private GameObject[] currentWave;
@@ -28,9 +32,11 @@ public class ObjectPool : MonoBehaviour
 
     private void Update()
     {
-        if (isWaveGoing)
+        if (isWaveGoing && enemyOnScreen == 0)
         {
-            int iterator = 0;
+            Debug.Log("Wave done!");
+            EndOfWave();
+            /*int iterator = 0;
 
             while (iterator < poolSize && !pool[iterator].activeSelf && !isWaveSpawning)
             {
@@ -44,7 +50,7 @@ public class ObjectPool : MonoBehaviour
                 Debug.Log("End of the wave!");
                 //StopAllCoroutines();
                 EndOfWave();
-            }
+            }*/
         }
     }
 
@@ -56,9 +62,10 @@ public class ObjectPool : MonoBehaviour
         {
             pool[i] = Instantiate(currentWave[i], transform);
             pool[i].SetActive(false);
+            pool[i].GetComponent<Enemy>().OnEnemyKilled += RemainingEnemies;
         }
         
-        Debug.Log("Populated !");
+        //Debug.Log("Populated !");
     }
 
     
@@ -79,8 +86,9 @@ public class ObjectPool : MonoBehaviour
 
         isWaveGoing = true;
         poolSize = wave.Length;
+        enemyOnScreen = wave.Length;
         currentWave = wave;
-        Debug.Log("Pool size = " + poolSize);
+        //Debug.Log("Pool size = " + poolSize);
         PopulatePool();
         StartCoroutine(InstantiateEnemies());
     }
@@ -106,15 +114,13 @@ public class ObjectPool : MonoBehaviour
         
         //EnableObjectInPool();
         
-        isWaveSpawning = true;
-        
+       
         for (int i = 0; i < poolSize; i++)
         {
             pool[i].SetActive(true);
             yield return new WaitForSeconds(spawnTimer);
         }
 
-        isWaveSpawning = false;
         //Debug.Log("Hey!");
     }
 
@@ -122,5 +128,19 @@ public class ObjectPool : MonoBehaviour
     {
         isWaveGoing = false;
         StartWave.interactable = true;
+
+        foreach (GameObject enemy in pool)
+        {
+            enemy.GetComponent<Enemy>().OnEnemyKilled -= RemainingEnemies;
+            Destroy(enemy);
+        }
+
+        ButtonText.text = "Next wave";
+    }
+
+    private void RemainingEnemies(object sender, EventArgs e)
+    {
+        enemyOnScreen -= 1;
+        Debug.Log("Enemies remaining = " + enemyOnScreen);
     }
 }

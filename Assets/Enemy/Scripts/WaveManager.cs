@@ -9,6 +9,7 @@ public class WaveManager : MonoBehaviour
 
     private Queue<GameObject[]> waves = new Queue<GameObject[]>();
     [SerializeField] private Button StartWave;
+    [SerializeField] private Text ButtonText;
 
     [SerializeField] private GameObject[] wave1;
     [SerializeField] private GameObject[] wave2;
@@ -40,10 +41,19 @@ public class WaveManager : MonoBehaviour
 
     public void LaunchWave()
     {
-        wave += 1;
-        Debug.Log("It's clicked");
-        StartWave.interactable = false;
-        GameObject[] currentWave = waves.Dequeue();
-        reference.LaunchNewWave(currentWave);
+        if (waves.Count > 0)
+        {
+            wave += 1;
+            // Debug.Log("It's clicked");
+            StartWave.interactable = false;
+            GameObject[] currentWave = waves.Dequeue();
+            ButtonText.text = "Wave " + wave;
+            reference.LaunchNewWave(currentWave);
+        }
+        else
+        {
+            StartWave.interactable = false;
+            ButtonText.text = "No waves left!";
+        }
     }
 }

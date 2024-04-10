@@ -40,7 +40,7 @@ public class Tile : MonoBehaviour
 
             if (!isPlaceable)
             {
-                Debug.Log("Blocking tile (" + coordinates.x + "," + coordinates.y + ")");
+                //Debug.Log("Blocking tile (" + coordinates.x + "," + coordinates.y + ")");
                 gridManager.BlockNode(coordinates);
             }
         }
