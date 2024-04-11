@@ -26,10 +26,6 @@ public class ObjectPool : MonoBehaviour
         get {return pool;}
     }
 
-    void Awake() {
-        PopulatePool();
-    }
-
     //private bool isWaveGoing = false;
 
     private GameObject[] currentWave;

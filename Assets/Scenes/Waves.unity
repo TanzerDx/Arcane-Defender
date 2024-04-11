@@ -2985,9 +2985,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843154504323912220, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7538274337565338468, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5191,6 +5203,8 @@ MonoBehaviour:
   - {fileID: 1753902661904866331, guid: 34a80c69adfe73c479ea37b37a462f04, type: 3}
   - {fileID: 1753902661904866331, guid: 34a80c69adfe73c479ea37b37a462f04, type: 3}
   reference: {fileID: 1173114424}
+  crystalBonus: 3
+  resourceBonus: 2
 --- !u!1001 &1180348683
 PrefabInstance:
   m_ObjectHideFlags: 0

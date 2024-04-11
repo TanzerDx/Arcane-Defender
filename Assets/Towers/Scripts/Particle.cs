@@ -6,7 +6,7 @@ public class Particle : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float particleSpeed = 1f;
-    float timeOfInitialization = 0f;
+    [SerializeField] float timeOfInitialization = 0f;
 
     private Transform target;
 
@@ -15,8 +15,9 @@ public class Particle : MonoBehaviour
     }
 
     private void Update() {
-        if (!target)
+        if (!target || timeOfInitialization >= 0.5f)
         {
+            Destroy(gameObject);
             return;
         }
 
@@ -25,11 +26,6 @@ public class Particle : MonoBehaviour
         rb.velocity = direction * particleSpeed;
 
         timeOfInitialization += Time.deltaTime;
-
-        if (timeOfInitialization >= 1f || !target.gameObject.activeInHierarchy)
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {

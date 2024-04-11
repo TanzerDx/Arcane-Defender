@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6309029382812718492}
   - component: {fileID: 6990498133173067917}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tile_0129
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3146254629358738561}
   - component: {fileID: 8169793249486104495}
   - component: {fileID: 3071548578321431529}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4930,7 +4930,7 @@ GameObject:
   - component: {fileID: 6305644025798690169}
   - component: {fileID: 10892641866886576}
   - component: {fileID: -4835170622368553988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5140,3 +5140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c44089ea411e74ca7e78c199493a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemies:
+    serializedVersion: 2
+    m_Bits: 0

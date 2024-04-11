@@ -76,7 +76,7 @@ public class TargetLocator : MonoBehaviour
 
         float targetDistance = Vector2.Distance(transform.position, target.position);
 
-        if(targetDistance < shootingRange && timeUntilFire >= 1f / projectilesPerSecond)
+        if(targetDistance < shootingRange && timeUntilFire >= 1f / data.AttackSpeed)
         {
             Attack(true);
             timeUntilFire = 0f;
