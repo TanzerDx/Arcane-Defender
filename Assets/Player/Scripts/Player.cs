@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] int playerHealth = 10;
+    float characterColorTimer;
     
     public int GetPlayerHealth { get { return playerHealth; }}
 
@@ -25,10 +26,17 @@ public class Player : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        if(GetComponent<SpriteRenderer>().color == Color.red)
+        {
+            characterColorTimer += Time.deltaTime;
+        }
+
+        if(characterColorTimer > 0.25f)
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+            characterColorTimer = 0f;
+        }
     }
 
-    void DealDamage()
-    {
-        
-    }
 }

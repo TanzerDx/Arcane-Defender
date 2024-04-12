@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Pathfinding");
+        SceneManager.LoadScene("Waves");
     }
 
     public void QuitGame()

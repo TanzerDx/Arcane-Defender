@@ -24,12 +24,14 @@ public class Tile : MonoBehaviour
     private Pathfinder pathfinder;
     private Vector2Int coordinates = new Vector2Int();
 
+    Color normalColor;
+
 
     private void Awake()
     {
         gridManager = FindObjectOfType<GridManager>();
         pathfinder = FindObjectOfType<Pathfinder>();
-
+        normalColor = transform.GetComponent<SpriteRenderer>().color;
     }
 
     private void Start()
@@ -46,7 +48,21 @@ public class Tile : MonoBehaviour
         }
     }
 
-   
+   void OnMouseEnter() {
+        if (isPlaceable)
+        {
+           transform.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else if (!isPlaceable)
+        {
+            transform.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+   }
+
+    void OnMouseExit() {
+        transform.GetComponent<SpriteRenderer>().color = normalColor;
+   }
+
 
     void OnMouseDown() {
         if (gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))
@@ -78,6 +94,7 @@ public class Tile : MonoBehaviour
             if (playerDistanceFromSquare <= placeDistance && isPlaceable)
             {
                 Vector3 opti = transform.position;
+
                 bool isSuccessful = towerPrefab.CreateTower(towerPrefab, new Vector3(opti.x, opti.y, opti.z -1));
                 if (isSuccessful)
                 {

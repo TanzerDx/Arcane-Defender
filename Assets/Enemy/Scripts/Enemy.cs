@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] int crystalReward = 25;
     [SerializeField] int resourceReward = 40;
-
+    
+    float enemyColorTimer;
 
     Bank bank;
 
@@ -54,6 +55,19 @@ public class Enemy : MonoBehaviour
     //     stats.ResetHealth(health);
     // }
 
+    void Update() {
+        if(GetComponent<SpriteRenderer>().color == Color.red)
+        {
+            enemyColorTimer += Time.deltaTime;
+        }
+
+        if(enemyColorTimer > 0.25f)
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+            enemyColorTimer = 0f;
+        }
+    }
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -74,6 +88,8 @@ public class Enemy : MonoBehaviour
 
     public void ProcessHit(int damage, bool isPhysical)
     {
+        GetComponent<SpriteRenderer>().color = Color.red;
+
         if (stats.TakingDamage(damage, isPhysical) <= 0) {
             //Destroy(gameObject);
             Reward();
