@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +12,7 @@ public class Tile : MonoBehaviour
 
     [SerializeField] bool isPlaceable;
     //bool isTowerPlaced = false;
+
     
     public bool IsPlaceableValue 
     { 
@@ -101,6 +101,7 @@ public class Tile : MonoBehaviour
                     gridManager.BlockNode(coordinates);
                     pathfinder.NotifyReceivers();
                     isPlaceable = false;
+                    
                 }
             }
 

@@ -34,6 +34,11 @@ public class MovePlayer : MonoBehaviour
         }
 
         transform.Translate(xValue, yValue , 0, Space.World);
+
+
+        // playerSource.clip = walkClip;
+        // playerSource.Play();
+
     }
 
 }

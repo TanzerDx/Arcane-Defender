@@ -164,17 +164,16 @@ MonoBehaviour:
   crystalReward: 5
   resourceReward: 15
   enemyHitAudio:
-  - {fileID: 8300000, guid: ee6a4e3782b9ce741871a0043b278006, type: 3}
-  - {fileID: 8300000, guid: e71639a9239d2f44caee723b708c3240, type: 3}
-  - {fileID: 8300000, guid: 8958c2f68798aaf44a258f867a6fd73e, type: 3}
-  - {fileID: 8300000, guid: 5a5a3b13479260b46bbabae94ee89bd8, type: 3}
-  - {fileID: 8300000, guid: 902ba54038783744583c2d8d46cc7e24, type: 3}
-  - {fileID: 8300000, guid: 08cfdaf5dc0990741b9106208367b19b, type: 3}
-  - {fileID: 8300000, guid: 683b60ad23f707945b45a9a856180f0e, type: 3}
-  - {fileID: 8300000, guid: 6c845ccf6e66d1f42bb76f0ceba4d37b, type: 3}
-  - {fileID: 8300000, guid: 6a6005e469cf2d34a96071beeb06b330, type: 3}
+  - {fileID: 8300000, guid: 99511c4088a49fb409e2bd62886ff16b, type: 3}
+  - {fileID: 8300000, guid: 3a6add7ec62078d45a6394c8a7b60a05, type: 3}
+  - {fileID: 8300000, guid: 2654fc9ae93909949a4b459d304cac72, type: 3}
+  - {fileID: 8300000, guid: c884ac2f4af43444bb29ae4856d07175, type: 3}
+  - {fileID: 8300000, guid: 078ebb91813c3714e803264c5e317893, type: 3}
+  - {fileID: 8300000, guid: f5fc3f8cd1478c44585bb8cd33cc49b2, type: 3}
+  - {fileID: 8300000, guid: 84f4279a3f9be2c42a87616727c4afc2, type: 3}
+  - {fileID: 8300000, guid: 5fa077f403e638645bbdddc414a34bf0, type: 3}
+  - {fileID: 8300000, guid: ce714ce2cc7659241a659c19c71119f2, type: 3}
   enemySource: {fileID: 5705939952242194259}
-  soundNumber: 0
   health: 10
   moveSpeed: 1
   damage: 1
@@ -228,7 +227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDamage: {fileID: 8300000, guid: 9ffcf301c24cf0a4e9d5be8fe66ffc21, type: 3}
-  playerSource: {fileID: 0}
 --- !u!50 &3874500701058732592
 Rigidbody2D:
   serializedVersion: 4

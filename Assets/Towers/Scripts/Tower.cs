@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,6 +89,16 @@ public class Tower : MonoBehaviour
 
 
     private TowerData data;
+
+    public AudioClip[] tower1Sounds;
+    public AudioClip[] tower2Sounds;
+    public AudioClip[] tower3Sounds;
+    public AudioClip[] tower4Sounds;
+
+    public AudioSource towerSource;
+
+    int soundNumber;
+    float soundPitch;
     
     public TowerData Data
     {
@@ -101,6 +110,9 @@ public class Tower : MonoBehaviour
         data = new TowerData((damage, damageUp1, damageUp2), (crystalsCost, crystalsLvUpCost1, crystalsLvUpCost2),
             (resourcesCost, resourceLvUpCost1, resourceLvUpCost2), (range, rangeUp1, rangeUp2),
             (attackSpeed, attackSpeedUp1, attackSpeedUp2), category, physical);
+
+        soundNumber = Random.Range(0, tower1Sounds.Length);
+        soundPitch = Random.Range(1f, 1.5f);
     }
 
 
@@ -117,8 +129,17 @@ public class Tower : MonoBehaviour
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
             Instantiate(tower.gameObject, position, Quaternion.identity);
+            
+            towerSource.clip = tower1Sounds[soundNumber];
+            towerSource.pitch = soundPitch;
+            towerSource.Play();
+            
+            soundNumber = Random.Range(0, tower1Sounds.Length);
+            soundPitch = Random.Range(1f, 1.5f);
+            
             bank.Withdraw(crystalsCost, resourcesCost);
             return true;
+
         }
 
         return false;

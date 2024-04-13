@@ -12,7 +12,9 @@ public class Enemy : MonoBehaviour
 
     public AudioClip[] enemyHitAudio;
     public AudioSource enemySource;
-    public int soundNumber;
+    int soundNumber;
+    float soundPitch;
+
     
     float enemyColorTimer;
 
@@ -54,6 +56,7 @@ public class Enemy : MonoBehaviour
         bank = FindObjectOfType<Bank>();
 
         soundNumber = Random.Range(0, enemyHitAudio.Length);
+        soundPitch = Random.Range(1f, 1.5f);
     }
 
     // void OnEnable()
@@ -97,8 +100,11 @@ public class Enemy : MonoBehaviour
         if (isFromPlayer)
         {
             enemySource.clip = enemyHitAudio[soundNumber];
+            enemySource.pitch = soundPitch;
             enemySource.Play();
+            
             soundNumber = Random.Range(0, enemyHitAudio.Length);
+            soundPitch = Random.Range(1f, 1.5f);
         }
         GetComponent<SpriteRenderer>().color = Color.red;
 
