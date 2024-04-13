@@ -10615,18 +10615,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUps
       objectReference: {fileID: 0}
-    - target: {fileID: 903707998695769378, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1654389685, guid: 89a13a96a6e6bf847b5e9bbc3c377a70, type: 3}
-    - target: {fileID: 3196923505001509853, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4328309678868768476, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -955596100, guid: 89a13a96a6e6bf847b5e9bbc3c377a70, type: 3}
     - target: {fileID: 6611601676977824057, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10705,10 +10693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6611601676977824057, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7333838583917877501, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

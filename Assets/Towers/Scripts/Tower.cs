@@ -9,6 +9,7 @@ public class Tower : MonoBehaviour
     //[SerializeField] int crystalCost = 5;
     //[SerializeField] int resourceCost = 5;
 
+    [Header("bob")]
     #region Damage
     
     [Tooltip("Base damage of the tower, updated if upgraded")]
@@ -23,7 +24,8 @@ public class Tower : MonoBehaviour
     #endregion
 
     
-    
+    [Header("phil")]
+
     #region Costs
 
     [Tooltip("Base cost of the tower (crystals, resources)")]

@@ -3,9 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 public class Tile : MonoBehaviour
 {
+    public static bool IsBuildOpen = false;
+    public static bool IsUpgradeOpen = false;
+    public static bool IsForcedClosed = true;
+    
     [SerializeField] Tower towerPrefab;
     [SerializeField] GameObject playerPrefab;
 
@@ -13,6 +19,11 @@ public class Tile : MonoBehaviour
     [SerializeField] float placeDistance = 1f;
 
     [SerializeField] bool isPlaceable;
+
+    [SerializeField] private GameObject popUps;
+
+    private GameObject buildPanel;
+    private GameObject upgradePanel;
     //bool isTowerPlaced = false;
     
     public bool IsPlaceableValue 
@@ -30,6 +41,14 @@ public class Tile : MonoBehaviour
     {
         gridManager = FindObjectOfType<GridManager>();
         pathfinder = FindObjectOfType<Pathfinder>();
+        buildPanel = popUps.transform.GetChild(0).gameObject;
+        upgradePanel = popUps.transform.GetChild(1).gameObject;
+        // if (buildPanel == null)
+        // {
+        //     print("Well that is akward...");
+        // }
+        // buildPanel.gameObject.SetActive(false);
+        // upgradePanel.gameObject.SetActive(false);
 
     }
 
@@ -50,6 +69,10 @@ public class Tile : MonoBehaviour
    
 
     void OnMouseDown() {
+        /*if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }*/
         if (gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))
         {
             /*currentPlayerPosition = playerPrefab.transform.position;
@@ -75,19 +98,39 @@ public class Tile : MonoBehaviour
             // Debug.Log("isWalkable: " + grid[cord].isWalkable);
 
             float playerDistanceFromSquare = Vector2.Distance(transform.position, playerPrefab.transform.position);
+            
+            // Debug.Log("Clicked");
 
-            if (playerDistanceFromSquare <= placeDistance && isPlaceable)
+            if (playerDistanceFromSquare <= placeDistance && isPlaceable && !IsBuildOpen && !IsUpgradeOpen)
             {
-                Vector3 opti = transform.position;
-                bool isSuccessful = towerPrefab.CreateTower(towerPrefab, new Vector3(opti.x, opti.y, opti.z -1));
-                if (isSuccessful)
-                {
-                    gridManager.BlockNode(coordinates);
-                    pathfinder.NotifyReceivers();
-                    isPlaceable = false;
-                }
+                Debug.Log("All good to go");
+                buildPanel.gameObject.SetActive(true);
+                IsBuildOpen = true;
+                StartCoroutine(WaitForUIResponse());
             }
-
         }
     }
+
+    IEnumerator WaitForUIResponse()
+    {
+        while (IsBuildOpen)
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        if (!IsForcedClosed)
+        {
+            Vector3 opti = transform.position;
+            bool isSuccessful = towerPrefab.CreateTower(UIManager.TowerChoosen, new Vector3(opti.x, opti.y, opti.z -1));
+            if (isSuccessful)
+            {
+                gridManager.BlockNode(coordinates);
+                pathfinder.NotifyReceivers();
+                isPlaceable = false;
+            }
+        }
+
+        IsForcedClosed = true;
+    }
+    
 }
