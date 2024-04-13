@@ -9,6 +9,9 @@ public class MovePlayer : MonoBehaviour
 
     [SerializeField] private SpriteRenderer sprite;
 
+    public AudioClip walkClip;
+    public AudioSource playerSource;
+
     void Update()
     {
         MovePlayerLogic(moveSpeed);

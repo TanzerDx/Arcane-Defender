@@ -1,4 +1,4 @@
-using System;
+// using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +9,10 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] int crystalReward = 25;
     [SerializeField] int resourceReward = 40;
+
+    public AudioClip[] enemyHitAudio;
+    public AudioSource enemySource;
+    public int soundNumber;
     
     float enemyColorTimer;
 
@@ -48,6 +52,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         bank = FindObjectOfType<Bank>();
+
+        soundNumber = Random.Range(0, enemyHitAudio.Length);
     }
 
     // void OnEnable()
@@ -73,7 +79,7 @@ public class Enemy : MonoBehaviour
     {
         if(other.gameObject.tag == "Particle")
         {
-            ProcessHit(1, true);
+            ProcessHit(1, true, false);
         }
         //TODO: We'll need to modify this to take into account the various projectiles of the towers
     }
@@ -86,12 +92,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void ProcessHit(int damage, bool isPhysical)
+    public void ProcessHit(int damage, bool isPhysical, bool isFromPlayer)
     {
+        if (isFromPlayer)
+        {
+            enemySource.clip = enemyHitAudio[soundNumber];
+            enemySource.Play();
+            soundNumber = Random.Range(0, enemyHitAudio.Length);
+        }
         GetComponent<SpriteRenderer>().color = Color.red;
 
         if (stats.TakingDamage(damage, isPhysical) <= 0) {
-            //Destroy(gameObject);
             Reward();
             Destroy(gameObject);
         }
