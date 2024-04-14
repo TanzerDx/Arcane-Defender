@@ -129,7 +129,7 @@ public class Tower : MonoBehaviour
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
             Instantiate(tower.gameObject, position, Quaternion.identity);
-            
+
             towerSource.clip = tower1Sounds[soundNumber];
             towerSource.pitch = soundPitch;
             towerSource.Play();

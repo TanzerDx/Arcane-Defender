@@ -5074,14 +5074,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6477296045968067191, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6477296045968067191, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5996,9 +5988,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundSounds:
-  - {fileID: 8300000, guid: 3bb1c55fd9236e741b164ec0705ce89f, type: 3}
-  - {fileID: 8300000, guid: 7fc092e98be35734ea11f6f296f9e207, type: 3}
-  - {fileID: 8300000, guid: eaf58dee2d25b814eb4a662590f085b9, type: 3}
+  - {fileID: 8300000, guid: bdc2fd65f18fb84459719661fac55715, type: 3}
+  - {fileID: 8300000, guid: 48a8eb3e5cddba64aa5f094d90305a22, type: 3}
+  - {fileID: 8300000, guid: 98b3775e407a12143974fa635a0b5c2d, type: 3}
   audioSource: {fileID: 1228684561}
 --- !u!82 &1228684561
 AudioSource:

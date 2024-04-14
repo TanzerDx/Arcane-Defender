@@ -170,9 +170,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c884ac2f4af43444bb29ae4856d07175, type: 3}
   - {fileID: 8300000, guid: 078ebb91813c3714e803264c5e317893, type: 3}
   - {fileID: 8300000, guid: f5fc3f8cd1478c44585bb8cd33cc49b2, type: 3}
-  - {fileID: 8300000, guid: 84f4279a3f9be2c42a87616727c4afc2, type: 3}
-  - {fileID: 8300000, guid: 5fa077f403e638645bbdddc414a34bf0, type: 3}
-  - {fileID: 8300000, guid: ce714ce2cc7659241a659c19c71119f2, type: 3}
   enemySource: {fileID: 5705939952242194259}
   health: 10
   moveSpeed: 1
