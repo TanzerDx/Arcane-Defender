@@ -19,22 +19,23 @@ public class Tile : MonoBehaviour
     [SerializeField] float placeDistance = 1f;
 
     [SerializeField] bool isPlaceable;
-
-    [SerializeField] private GameObject popUps;
-
-    private GameObject buildPanel;
-    private GameObject upgradePanel;
-    //bool isTowerPlaced = false;
     
     public bool IsPlaceableValue 
     { 
         get {return isPlaceable;}
     }
-    
 
+    [SerializeField] private GameObject popUps;
+
+    private GameObject buildPanel;
+    private GameObject upgradePanel;
+    private GameObject towerOnThisTile;
+    
     GridManager gridManager;
     private Pathfinder pathfinder;
     private Vector2Int coordinates = new Vector2Int();
+
+    private bool isSubbed = false;
 
 
     private void Awake()
@@ -66,7 +67,24 @@ public class Tile : MonoBehaviour
         }
     }
 
-   
+
+    private void Update()
+    {
+        if (towerOnThisTile != null && !isSubbed)
+        {
+            towerOnThisTile.GetComponent<TowerManagement>().OnSellTower += FreeTile;
+            isSubbed = true;
+        }
+    }
+
+
+    private void FreeTile(object sender, EventArgs e)
+    {
+        isPlaceable = true;
+        Debug.Log("Freeing the tile");
+        pathfinder.NotifyReceivers();
+    }
+
 
     void OnMouseDown() {
         /*if (EventSystem.current.IsPointerOverGameObject())
@@ -103,7 +121,6 @@ public class Tile : MonoBehaviour
 
             if (playerDistanceFromSquare <= placeDistance && isPlaceable && !IsBuildOpen && !IsUpgradeOpen)
             {
-                Debug.Log("All good to go");
                 buildPanel.gameObject.SetActive(true);
                 IsBuildOpen = true;
                 StartCoroutine(WaitForUIResponse());
@@ -121,7 +138,7 @@ public class Tile : MonoBehaviour
         if (!IsForcedClosed)
         {
             Vector3 opti = transform.position;
-            bool isSuccessful = towerPrefab.CreateTower(UIManager.TowerChoosen, new Vector3(opti.x, opti.y, opti.z -1));
+            bool isSuccessful = towerPrefab.CreateTower(UIManager.TowerChoosen, new Vector3(opti.x, opti.y, opti.z -1), ref towerOnThisTile);
             if (isSuccessful)
             {
                 gridManager.BlockNode(coordinates);

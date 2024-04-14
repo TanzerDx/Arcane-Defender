@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class UIManager : MonoBehaviour
 {
@@ -24,43 +25,42 @@ public class UIManager : MonoBehaviour
     public void OnGreenClicked()
     {
         TowerChoosen = towerPool[0].GetComponent<Tower>();
-        OnExitClicked();
         Tile.IsForcedClosed = false;
-        Debug.Log("Clicked");
+        OnExitClicked();
     }
     
     public void OnBlueClicked()
     {
         TowerChoosen = towerPool[1].GetComponent<Tower>();
-        OnExitClicked();
         Tile.IsForcedClosed = false;
-        Debug.Log("Clicked");
+        OnExitClicked();
     }
     
     public void OnGreyClicked()
     {
         TowerChoosen = towerPool[2].GetComponent<Tower>();
-        OnExitClicked();
         Tile.IsForcedClosed = false;
-        Debug.Log("Clicked");
+        OnExitClicked();
     }
     
     public void OnOrangeClicked()
     {
         TowerChoosen = towerPool[3].GetComponent<Tower>();
-        OnExitClicked();
         Tile.IsForcedClosed = false;
-        Debug.Log("Clicked");
+        OnExitClicked();
     }
 
     public void OnUpgradeClicked()
     {
-        
+        TowerManagement.IsUpgrading = true;
+        OnExitClicked();
     }
 
     public void OnSellClicked()
     {
-        
+        TowerManagement.IsSelling = true;
+        Debug.Log("Selling clicked!");
+        OnExitClicked();
     }
 
     public void OnExitClicked()
@@ -68,6 +68,5 @@ public class UIManager : MonoBehaviour
         Tile.IsBuildOpen = false;
         Tile.IsUpgradeOpen = false;
         gameObject.SetActive(false);
-        Debug.Log("Clicked");
     }
 }

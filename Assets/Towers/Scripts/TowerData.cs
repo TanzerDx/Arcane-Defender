@@ -7,6 +7,11 @@ public class TowerData
     //Tower level
     [Tooltip("The current level of the tower 0 being a non-upgraded tower")]
     private int level;
+    
+    public int Level
+    {
+        get { return level; }
+    }
 
 
     //Tower's damage stat depending on current level
@@ -104,6 +109,7 @@ public class TowerData
 
 
     //This method returns the amount of crystals and resources a player gets by selling a tower
+    //(Crystals, Resources)
     public (int, int) Sell()
     {
         (int, int) tot = cost;
@@ -127,6 +133,7 @@ public class TowerData
     //Returns the cost of the upgrade to the next level
     //If the upgrade is impossible, returns (0,0)
     //If it is possible, returns the cost of the upgrade and updates the stats
+    //(Crystals, Resources)
     public (int, int) Upgrade((int, int) money)
     {
         (int, int) price = money;

@@ -9,7 +9,7 @@ public class Tower : MonoBehaviour
     //[SerializeField] int crystalCost = 5;
     //[SerializeField] int resourceCost = 5;
 
-    [Header("bob")]
+    [Header("Damage")]
     #region Damage
     
     [Tooltip("Base damage of the tower, updated if upgraded")]
@@ -24,7 +24,7 @@ public class Tower : MonoBehaviour
     #endregion
 
     
-    [Header("phil")]
+    [Header("Costs")]
 
     #region Costs
 
@@ -50,6 +50,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("Range")]
     #region Range
 
     [Tooltip("Base range of the tower, updated if upgraded (1 range = 1 square)")]
@@ -65,6 +66,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("AttackSpeed")]
     #region AttackSpeed
 
     [Tooltip("Number of attacks per second")]
@@ -80,6 +82,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("Miscellaneous")]
     #region Others
 
     [Tooltip("The category this tower belongs in")]
@@ -106,7 +109,7 @@ public class Tower : MonoBehaviour
     }
 
 
-    public bool CreateTower(Tower tower, Vector3 position)
+    public bool CreateTower(Tower tower, Vector3 position, ref GameObject builtTower)
     {
         Bank bank = FindObjectOfType<Bank>();
         
@@ -118,7 +121,7 @@ public class Tower : MonoBehaviour
 
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
-            Instantiate(tower.gameObject, position, Quaternion.identity);
+            builtTower = Instantiate(tower.gameObject, position, Quaternion.identity);
             bank.Withdraw(crystalsCost, resourcesCost);
             return true;
         }

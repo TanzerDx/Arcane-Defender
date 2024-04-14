@@ -8,10 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6514621409619104784, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2cc9b9263ead72540a7e4444c8ef21fe, type: 2}
     - target: {fileID: -4879055747565749033, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2cc9b9263ead72540a7e4444c8ef21fe, type: 2}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: crystalsLvUpCost1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: crystalsLvUpCost2
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: resourceLvUpCost1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: resourceLvUpCost2
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3752508951919672759, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1

@@ -287,12 +287,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a2626a2c5e637a4ca5a8a20644501fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4813296892803340592, guid: 46313035308cf2c48a84743d5c46dc0f, type: 3}
+  towerPrefab: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
   playerPrefab: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
   placeDistance: 3
   isPlaceable: 1
   popUps: {fileID: 261978493233094536, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-  buildPanel: {fileID: 261978493233094536, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
 --- !u!61 &6210384051650483755
 BoxCollider2D:
   m_ObjectHideFlags: 0
