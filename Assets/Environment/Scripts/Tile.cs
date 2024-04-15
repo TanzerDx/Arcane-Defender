@@ -70,11 +70,11 @@ public class Tile : MonoBehaviour
 
     private void Update()
     {
-        if (towerOnThisTile != null && !isSubbed)
-        {
-            towerOnThisTile.GetComponent<TowerManagement>().OnSellTower += FreeTile;
-            isSubbed = true;
-        }
+        // if (towerOnThisTile != null && !isSubbed)
+        // {
+        //     towerOnThisTile.GetComponent<TowerManagement>().OnSellTower += FreeTile;
+        //     isSubbed = true;
+        // }
     }
 
 
@@ -83,6 +83,7 @@ public class Tile : MonoBehaviour
         isPlaceable = true;
         Debug.Log("Freeing the tile");
         pathfinder.NotifyReceivers();
+        towerOnThisTile.GetComponent<TowerManagement>().OnSellTower -= FreeTile;
     }
 
 
@@ -144,6 +145,7 @@ public class Tile : MonoBehaviour
                 gridManager.BlockNode(coordinates);
                 pathfinder.NotifyReceivers();
                 isPlaceable = false;
+                towerOnThisTile.GetComponent<TowerManagement>().OnSellTower += FreeTile;
             }
         }
 

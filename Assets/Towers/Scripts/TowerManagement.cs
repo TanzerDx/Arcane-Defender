@@ -72,7 +72,7 @@ public class TowerManagement : MonoBehaviour
             OnSellTower(this, EventArgs.Empty);
         }
         
-        Destroy(gameObject);
+        Destroy(gameObject, 0.1f);
     }
 
     
