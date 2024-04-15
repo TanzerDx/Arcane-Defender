@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
+using System;
 
 public class Tile : MonoBehaviour
 {
@@ -58,6 +59,14 @@ public class Tile : MonoBehaviour
                 gridManager.BlockNode(coordinates);
             }
         }
+    }
+    
+    private void FreeTile(object sender, EventArgs e)
+    {
+        isPlaceable = true;
+        Debug.Log("Freeing the tile");
+        pathfinder.NotifyReceivers();
+        towerOnThisTile.GetComponent<TowerManagement>().OnSellTower -= FreeTile;
     }
 
    void OnMouseEnter() {
