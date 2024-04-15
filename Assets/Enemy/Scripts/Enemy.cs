@@ -1,4 +1,4 @@
-using System;
+// using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +10,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] int crystalReward = 25;
     [SerializeField] int resourceReward = 40;
 
+    public AudioClip[] enemyHitAudio;
+    AudioSource enemySource;
+    float soundPitch;
+
+    
+    float enemyColorTimer;
 
     Bank bank;
 
@@ -47,6 +53,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         bank = FindObjectOfType<Bank>();
+        enemySource = gameObject.GetComponent<AudioSource>();
     }
 
     // void OnEnable()
@@ -54,12 +61,25 @@ public class Enemy : MonoBehaviour
     //     stats.ResetHealth(health);
     // }
 
+    void Update() {
+        if(GetComponent<SpriteRenderer>().color == Color.red)
+        {
+            enemyColorTimer += Time.deltaTime;
+        }
+
+        if(enemyColorTimer > 0.25f)
+        {
+            GetComponent<SpriteRenderer>().color = Color.white;
+            enemyColorTimer = 0f;
+        }
+    }
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Particle")
         {
-            ProcessHit(1, true);
+            ProcessHit(1, true, false);
         }
         //TODO: We'll need to modify this to take into account the various projectiles of the towers
     }
@@ -72,10 +92,21 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void ProcessHit(int damage, bool isPhysical)
+    public void ProcessHit(int damage, bool isPhysical, bool isFromPlayer)
     {
+        if (isFromPlayer)
+        {
+
+            int soundNumber = Random.Range(0, enemyHitAudio.Length);
+
+            enemySource.clip = enemyHitAudio[soundNumber];
+            enemySource.pitch = Random.Range(1f, 1.5f);
+            enemySource.Play();
+            
+        }
+        GetComponent<SpriteRenderer>().color = Color.red;
+
         if (stats.TakingDamage(damage, isPhysical) <= 0) {
-            //Destroy(gameObject);
             Reward();
             Destroy(gameObject);
         }

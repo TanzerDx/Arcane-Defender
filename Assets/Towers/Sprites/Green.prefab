@@ -16,22 +16,34 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2cc9b9263ead72540a7e4444c8ef21fe, type: 2}
+    - target: {fileID: -71455477678005385, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -71455477678005385, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42be64234ae46274abf75f5726b9fb8d, type: 3}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-      propertyPath: crystalsLvUpCost1
-      value: 10
+      propertyPath: towerSounds.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-      propertyPath: crystalsLvUpCost2
-      value: 20
-      objectReference: {fileID: 0}
+      propertyPath: towerSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 96a3c582244c19e4e9c7d71aa23a0066, type: 3}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-      propertyPath: resourceLvUpCost1
-      value: 10
-      objectReference: {fileID: 0}
+      propertyPath: towerSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 42be64234ae46274abf75f5726b9fb8d, type: 3}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-      propertyPath: resourceLvUpCost2
-      value: 20
-      objectReference: {fileID: 0}
+      propertyPath: tower1Sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 96a3c582244c19e4e9c7d71aa23a0066, type: 3}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: tower1Sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 42be64234ae46274abf75f5726b9fb8d, type: 3}
     - target: {fileID: 3752508951919672759, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1

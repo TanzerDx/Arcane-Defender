@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -93,8 +92,12 @@ public class Tower : MonoBehaviour
 
     #endregion
 
-
     private TowerData data;
+
+
+    public AudioClip[] towerSounds;
+
+    float soundPitch;
     
     public TowerData Data
     {
@@ -121,9 +124,20 @@ public class Tower : MonoBehaviour
 
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
-            builtTower = Instantiate(tower.gameObject, position, Quaternion.identity);
+            GameObject instantiatedTower = Instantiate(tower.gameObject, position, Quaternion.identity);
+
+            int soundNumber = Random.Range(0, towerSounds.Length);
+
+            AudioSource towerSource = instantiatedTower.GetComponent<AudioSource>();
+
+            towerSource.clip = towerSounds[soundNumber];
+            towerSource.pitch = Random.Range(1f, 1.5f);
+            towerSource.Play();
+            
+            builtTower = instantiatedTower;
             bank.Withdraw(crystalsCost, resourcesCost);
             return true;
+
         }
 
         return false;

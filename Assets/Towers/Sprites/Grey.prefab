@@ -16,6 +16,26 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6fdc2eb393f496d4796abbb47622b6b0, type: 2}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: towerSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: towerSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: towerSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: tower1Sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: tower1Sounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
     - target: {fileID: 3752508951919672759, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1

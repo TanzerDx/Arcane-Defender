@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,22 +34,16 @@ public class Tile : MonoBehaviour
     private Pathfinder pathfinder;
     private Vector2Int coordinates = new Vector2Int();
 
-    private bool isSubbed = false;
+    Color normalColor;
 
 
     private void Awake()
     {
         gridManager = FindObjectOfType<GridManager>();
         pathfinder = FindObjectOfType<Pathfinder>();
+        normalColor = transform.GetComponent<SpriteRenderer>().color;
         buildPanel = popUps.transform.GetChild(0).gameObject;
         upgradePanel = popUps.transform.GetChild(1).gameObject;
-        // if (buildPanel == null)
-        // {
-        //     print("Well that is akward...");
-        // }
-        // buildPanel.gameObject.SetActive(false);
-        // upgradePanel.gameObject.SetActive(false);
-
     }
 
     private void Start()
@@ -67,24 +60,20 @@ public class Tile : MonoBehaviour
         }
     }
 
+   void OnMouseEnter() {
+        if (isPlaceable)
+        {
+           transform.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else if (!isPlaceable)
+        {
+            transform.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+   }
 
-    private void Update()
-    {
-        // if (towerOnThisTile != null && !isSubbed)
-        // {
-        //     towerOnThisTile.GetComponent<TowerManagement>().OnSellTower += FreeTile;
-        //     isSubbed = true;
-        // }
-    }
-
-
-    private void FreeTile(object sender, EventArgs e)
-    {
-        isPlaceable = true;
-        Debug.Log("Freeing the tile");
-        pathfinder.NotifyReceivers();
-        towerOnThisTile.GetComponent<TowerManagement>().OnSellTower -= FreeTile;
-    }
+    void OnMouseExit() {
+        transform.GetComponent<SpriteRenderer>().color = normalColor;
+   }
 
 
     void OnMouseDown() {
