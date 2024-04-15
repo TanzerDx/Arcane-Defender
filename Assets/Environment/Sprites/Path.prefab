@@ -131,6 +131,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 0}
   placeDistance: 3
   isPlaceable: 0
+  popUps: {fileID: 0}
+  openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
 --- !u!61 &-6214064148661286647
 BoxCollider2D:
   m_ObjectHideFlags: 0

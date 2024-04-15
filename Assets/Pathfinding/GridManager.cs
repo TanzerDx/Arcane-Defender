@@ -44,6 +44,15 @@ public class GridManager : MonoBehaviour
             grid[coordinates].isWalkable = false;
         }
     }
+    
+    
+    public void UnlockNode(Vector2Int coordinates)
+    {
+        if (grid.ContainsKey(coordinates))
+        {
+            grid[coordinates].isWalkable = true;
+        }
+    }
 
 
 

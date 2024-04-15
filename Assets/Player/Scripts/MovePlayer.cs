@@ -48,7 +48,7 @@ public class MovePlayer : MonoBehaviour
             playerSource.pitch = Random.Range(1, 1.5f);
             playerSource.Play();
         }
-        else if (!isMoving)
+        else if (!isMoving && playerSource.clip == walkClip)
         {
             playerSource.Stop();
         }

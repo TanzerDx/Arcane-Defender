@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8837071994466856685}
   - component: {fileID: 2726533630300398540}
   - component: {fileID: 3752508951919672759}
+  - component: {fileID: 3679606115357661551}
+  - component: {fileID: -6514621409619104784}
   - component: {fileID: -71455477678005385}
   m_Layer: 8
   m_Name: Tower
@@ -117,18 +119,9 @@ MonoBehaviour:
   attackSpeedUp2: 0
   category: Model
   physical: 1
-  tower1Sounds:
+  towerSounds:
   - {fileID: 0}
   - {fileID: 0}
-  tower2Sounds:
-  - {fileID: 8300000, guid: 02605e874c63e944d894ca0c1e222611, type: 3}
-  - {fileID: 8300000, guid: a08825b498fc51545b28ecc133e9c057, type: 3}
-  tower3Sounds:
-  - {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
-  - {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
-  tower4Sounds:
-  - {fileID: 8300000, guid: e938f767690825f49a6abd91b4632621, type: 3}
-  - {fileID: 8300000, guid: 40e6a6e39708786479ece538137c0d70, type: 3}
 --- !u!61 &3752508951919672759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,6 +167,42 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3679606115357661551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925318814131133804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bef075947374d48ace82c6051ed8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateAnimation: {fileID: -6514621409619104784}
+  building: {fileID: 2726533630300398540}
+  openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
+--- !u!95 &-6514621409619104784
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3925318814131133804}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &-71455477678005385
 AudioSource:
   m_ObjectHideFlags: 0

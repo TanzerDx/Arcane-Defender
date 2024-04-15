@@ -8,6 +8,7 @@ public class Tower : MonoBehaviour
     //[SerializeField] int crystalCost = 5;
     //[SerializeField] int resourceCost = 5;
 
+    [Header("Damage")]
     #region Damage
     
     [Tooltip("Base damage of the tower, updated if upgraded")]
@@ -22,7 +23,8 @@ public class Tower : MonoBehaviour
     #endregion
 
     
-    
+    [Header("Costs")]
+
     #region Costs
 
     [Tooltip("Base cost of the tower (crystals, resources)")]
@@ -47,6 +49,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("Range")]
     #region Range
 
     [Tooltip("Base range of the tower, updated if upgraded (1 range = 1 square)")]
@@ -62,6 +65,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("AttackSpeed")]
     #region AttackSpeed
 
     [Tooltip("Number of attacks per second")]
@@ -77,6 +81,7 @@ public class Tower : MonoBehaviour
 
 
 
+    [Header("Miscellaneous")]
     #region Others
 
     [Tooltip("The category this tower belongs in")]
@@ -106,7 +111,8 @@ public class Tower : MonoBehaviour
             (attackSpeed, attackSpeedUp1, attackSpeedUp2), category, physical);
     }
 
-    public bool CreateTower(Tower tower, Vector3 position)
+
+    public bool CreateTower(Tower tower, Vector3 position, ref GameObject builtTower)
     {
         Bank bank = FindObjectOfType<Bank>();
         
@@ -128,6 +134,7 @@ public class Tower : MonoBehaviour
             towerSource.pitch = Random.Range(1f, 1.5f);
             towerSource.Play();
             
+            builtTower = instantiatedTower;
             bank.Withdraw(crystalsCost, resourcesCost);
             return true;
 
