@@ -18,7 +18,6 @@ public class AudioPlayer : MonoBehaviour
     if (!audioSource.isPlaying)
     {
         soundNumber = Random.Range(0, backgroundSounds.Length);
-        soundPitch = Random.Range(1f, 1.5f);
         PlaySound();
     }
 }
@@ -26,7 +25,7 @@ public class AudioPlayer : MonoBehaviour
     void PlaySound()
     {
         audioSource.clip = backgroundSounds[soundNumber];
-        audioSource.pitch = soundPitch;
+        audioSource.pitch = Random.Range(1f, 1.5f);
         audioSource.Play();
     }
 

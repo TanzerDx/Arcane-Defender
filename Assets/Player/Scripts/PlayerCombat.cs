@@ -14,31 +14,22 @@ public class PlayerCombat : MonoBehaviour
     public AudioClip[] staffSwingSounds;
     public AudioClip[] staffHitSounds;
 
-    public AudioSource playerSource;
-
-    int soundNumberSwing;
-    int soundNumberHit;
-    
-    float soundPitch;
+    AudioSource playerSource;
 
     private void Awake() {
         player = GetComponent<Player>();
-        
-        soundNumberSwing = Random.Range(0, staffSwingSounds.Length);
-        soundNumberHit = Random.Range(0, staffHitSounds.Length);
-        soundPitch = Random.Range(1f, 1.5f);
+        playerSource = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {         
+            int soundNumberSwing = Random.Range(0, staffSwingSounds.Length);
+
             playerSource.clip = staffSwingSounds[soundNumberSwing];
-            playerSource.pitch = soundPitch;
+            playerSource.pitch = Random.Range(1, 1.5f);
             playerSource.Play();
-            
-            soundNumberSwing = Random.Range(0, staffSwingSounds.Length);
-            soundPitch = Random.Range(1f, 1.5f);
 
             Attack();
 
@@ -53,12 +44,11 @@ public class PlayerCombat : MonoBehaviour
         
         if(hitEnemies.Length != 0)
         {
+            int soundNumberHit = Random.Range(0, staffHitSounds.Length);
+
             playerSource.clip = staffHitSounds[soundNumberHit];
-            playerSource.pitch = soundPitch;
+            playerSource.pitch = Random.Range(1, 1.5f);
             playerSource.Play();
-            
-            soundNumberHit = Random.Range(0, staffHitSounds.Length);
-            soundPitch = Random.Range(1, 1.5f);
         }
 
         foreach(Collider2D enemy in hitEnemies)

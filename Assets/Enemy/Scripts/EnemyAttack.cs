@@ -23,8 +23,6 @@ public class EnemyAttack : MonoBehaviour
         player = FindObjectOfType<Player>();
         healthManager = FindObjectOfType<HealthManager>();
         playerSource = player.GetComponent<AudioSource>();
-
-        soundPitch = Random.Range(1f, 1.5f);
     }
 
     void Update() {
@@ -35,10 +33,10 @@ public class EnemyAttack : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && timeBetweenHit >= 1f)
         {
+
             playerSource.clip = playerDamage;
-            playerSource.pitch = soundPitch;
+            playerSource.pitch = Random.Range(1f, 1.5f);
             playerSource.Play();
-            soundPitch = Random.Range(1f, 1.5f);
 
             player.SetPlayerHealth(player.GetPlayerHealth - enemy.EnemyStats.Damage);
             healthManager.ChangeHealthbar("player", player.GetPlayerHealth);

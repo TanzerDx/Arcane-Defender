@@ -10,7 +10,13 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
 
     public AudioClip walkClip;
-    public AudioSource playerSource;
+    AudioSource playerSource;
+
+    bool isMoving;
+
+    private void Awake() {
+        playerSource = gameObject.GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -22,7 +28,8 @@ public class MovePlayer : MonoBehaviour
         float xValue = (Input.GetAxis("Horizontal")) * moveSpeed  * Time.deltaTime;
         float yValue = (Input.GetAxis("Vertical")) * moveSpeed  * Time.deltaTime;
         
-        PlayerAnim.SetBool("IsMoving", xValue != 0 || yValue != 0);
+        isMoving = xValue != 0 || yValue != 0;
+        PlayerAnim.SetBool("IsMoving", isMoving);
 
         if (xValue > 0)
         {
@@ -35,10 +42,16 @@ public class MovePlayer : MonoBehaviour
 
         transform.Translate(xValue, yValue , 0, Space.World);
 
-
-        // playerSource.clip = walkClip;
-        // playerSource.Play();
-
+        if(isMoving && !playerSource.isPlaying)
+        {
+            playerSource.clip = walkClip;
+            playerSource.pitch = Random.Range(1, 1.5f);
+            playerSource.Play();
+        }
+        else if (!isMoving)
+        {
+            playerSource.Stop();
+        }
     }
 
 }

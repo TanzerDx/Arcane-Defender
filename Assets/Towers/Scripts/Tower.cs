@@ -87,15 +87,11 @@ public class Tower : MonoBehaviour
 
     #endregion
 
-
     private TowerData data;
 
-    public AudioClip[] tower1Sounds;
-    public AudioClip[] tower2Sounds;
-    public AudioClip[] tower3Sounds;
-    public AudioClip[] tower4Sounds;
 
-    int soundNumber;
+    public AudioClip[] towerSounds;
+
     float soundPitch;
     
     public TowerData Data
@@ -124,13 +120,12 @@ public class Tower : MonoBehaviour
         {
             GameObject instantiatedTower = Instantiate(tower.gameObject, position, Quaternion.identity);
 
-            soundNumber = Random.Range(0, tower1Sounds.Length);
-            soundPitch = Random.Range(1f, 1.5f);
+            int soundNumber = Random.Range(0, towerSounds.Length);
 
             AudioSource towerSource = instantiatedTower.GetComponent<AudioSource>();
 
-            towerSource.clip = tower1Sounds[soundNumber];
-            towerSource.pitch = soundPitch;
+            towerSource.clip = towerSounds[soundNumber];
+            towerSource.pitch = Random.Range(1f, 1.5f);
             towerSource.Play();
             
             bank.Withdraw(crystalsCost, resourcesCost);

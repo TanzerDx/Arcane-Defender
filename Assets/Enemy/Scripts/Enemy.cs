@@ -11,8 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] int resourceReward = 40;
 
     public AudioClip[] enemyHitAudio;
-    public AudioSource enemySource;
-    int soundNumber;
+    AudioSource enemySource;
     float soundPitch;
 
     
@@ -54,9 +53,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         bank = FindObjectOfType<Bank>();
-
-        soundNumber = Random.Range(0, enemyHitAudio.Length);
-        soundPitch = Random.Range(1f, 1.5f);
+        enemySource = gameObject.GetComponent<AudioSource>();
     }
 
     // void OnEnable()
@@ -99,12 +96,13 @@ public class Enemy : MonoBehaviour
     {
         if (isFromPlayer)
         {
+
+            int soundNumber = Random.Range(0, enemyHitAudio.Length);
+
             enemySource.clip = enemyHitAudio[soundNumber];
-            enemySource.pitch = soundPitch;
+            enemySource.pitch = Random.Range(1f, 1.5f);
             enemySource.Play();
             
-            soundNumber = Random.Range(0, enemyHitAudio.Length);
-            soundPitch = Random.Range(1f, 1.5f);
         }
         GetComponent<SpriteRenderer>().color = Color.red;
 
