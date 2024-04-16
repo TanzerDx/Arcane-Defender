@@ -77,11 +77,12 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Particle")
+        if(other.gameObject.CompareTag("Particle"))
         {
-            ProcessHit(1, true, false);
+            Particle particleData = other.gameObject.GetComponent<Particle>();
+            ProcessHit(particleData.Damage, particleData.IsPhysical, false);
         }
-        //TODO: We'll need to modify this to take into account the various projectiles of the towers
+        //DOING: We'll need to modify this to take into account the various projectiles of the towers
     }
 
     public void Reward()
@@ -92,7 +93,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void ProcessHit(int damage, bool isPhysical, bool isFromPlayer)
+    public void ProcessHit(int damageRecieved, bool isPhysical, bool isFromPlayer)
     {
         if (isFromPlayer)
         {
@@ -106,10 +107,12 @@ public class Enemy : MonoBehaviour
         }
         GetComponent<SpriteRenderer>().color = Color.red;
 
-        if (stats.TakingDamage(damage, isPhysical) <= 0) {
+        if (stats.TakingDamage(damageRecieved, isPhysical) <= 0) {
             Reward();
             Destroy(gameObject);
         }
+        
+        Debug.Log("Outch! HP remaining = " + stats.Health + "\nDamage taken = " + damageRecieved);
     }
 
 }

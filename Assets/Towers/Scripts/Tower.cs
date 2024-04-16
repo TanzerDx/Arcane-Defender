@@ -85,7 +85,7 @@ public class Tower : MonoBehaviour
     #region Others
 
     [Tooltip("The category this tower belongs in")]
-    [SerializeField] private string category;
+    [SerializeField] private bool category;
     
     [Tooltip("Is the tower dealing physical damage? If false, the tower is dealing magical damage")]
     [SerializeField] private bool physical;

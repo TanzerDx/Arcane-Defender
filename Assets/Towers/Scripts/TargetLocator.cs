@@ -95,6 +95,8 @@ public class TargetLocator : MonoBehaviour
         {
             GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
             Particle particleScript = particle.GetComponent<Particle>();
+            particleScript.Damage = data.Damage;
+            particleScript.IsPhysical = data.Physical;
             particleScript.SetTarget(target);
         
         }

@@ -71,10 +71,10 @@ public class TowerData
     private float attackSpeedUp2;
 
 
-    //Tower category
+    //Tower category AKA does it inflicts slow + need for another one for the slow duration
     [Tooltip("The category this tower belongs in")]
-    private string category;
-    public string Category
+    private bool category;
+    public bool Category
     {
         get { return category; }
     }
@@ -94,7 +94,7 @@ public class TowerData
     private float sellRatio;
 
     public TowerData((int, int, int) _damage, (int, int, int) _crysCosts, (int, int, int) _ressCosts,
-        (float, float, float) _ranges, (float, float, float) _speed, string _category, bool _dmgType)
+        (float, float, float) _ranges, (float, float, float) _speed, bool _category, bool _dmgType)
     {
         level = 0;
         (damage, damageUp1, damageUp2) = _damage;
