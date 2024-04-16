@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    [SerializeField] private Animator fightAnimation;
+    
     public Transform attackPoint;
     public float attackRange = 0.5f;
+    [SerializeField]private float attackCD = 0.5f;
+    private float coolDown;
 
     public LayerMask enemies;
     Player player;
@@ -23,16 +27,34 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && coolDown <= 0)
         {         
             int soundNumberSwing = Random.Range(0, staffSwingSounds.Length);
 
             playerSource.clip = staffSwingSounds[soundNumberSwing];
             playerSource.pitch = Random.Range(1, 1.5f);
             playerSource.Play();
+            
+            fightAnimation.SetBool("IsFighting", true);
 
             Attack();
 
+            coolDown = attackCD;
+
+        }
+        else if(coolDown > 0)
+        {
+            fightAnimation.SetBool("IsFighting", false);
+            coolDown -= Time.deltaTime;
+        }
+
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            attackPoint.localPosition = new Vector3(1.4f, 0, 0);
+        }
+        else if (Input.GetAxis("Horizontal") < 0)
+        {
+            attackPoint.localPosition = new Vector3(-1.4f, 0, 0);
         }
     }
 
@@ -64,6 +86,6 @@ public class PlayerCombat : MonoBehaviour
             return;
         }
 
-       Gizmos.DrawWireSphere(attackPoint.position, attackRange); 
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange); 
     }
 }

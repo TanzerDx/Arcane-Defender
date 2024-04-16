@@ -73,18 +73,22 @@ public class CoordinateLabeler : MonoBehaviour
                 if (!node.isWalkable)
                 {
                     label.color = blockedColor;
+                    label.text = "";
                 }
                 else if (node.isPath) 
                 { 
                     label.color = pathColor;
+                    label.text = "Ξ";
                 }
                 else if(node.isExplored)
                 {
                     label.color = exploredColor;
+                    label.text = "";
                 }
                 else
                 {
                     label.color = defaultColor;
+                    label.text = "";
                 }
             }
 

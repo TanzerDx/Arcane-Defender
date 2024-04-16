@@ -37,15 +37,15 @@ public class TargetLocator : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-            Debug.Log(other.gameObject);
+            //Debug.Log(other.gameObject);
 
             enemies.Add(other.gameObject);
-            Debug.Log("Enemy added!");
+            //Debug.Log("Enemy added!");
     }
 
     void OnTriggerExit2D(Collider2D other) {
             enemies.Remove(other.gameObject);
-            Debug.Log("Enemy removed!");
+            //Debug.Log("Enemy removed!");
     
     }
 
