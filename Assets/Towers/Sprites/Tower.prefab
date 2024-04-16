@@ -120,8 +120,8 @@ MonoBehaviour:
   category: Model
   physical: 1
   towerSounds:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
+  - {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
 --- !u!61 &3752508951919672759
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,7 +181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateAnimation: {fileID: -6514621409619104784}
   building: {fileID: 2726533630300398540}
-  openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
 --- !u!95 &-6514621409619104784
 Animator:
   serializedVersion: 5

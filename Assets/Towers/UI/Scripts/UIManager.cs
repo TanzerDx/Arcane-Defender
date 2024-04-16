@@ -10,70 +10,61 @@ public class UIManager : MonoBehaviour
 
     public static Tower TowerChoosen = null;
     
-    public AudioClip onUpgrade;
-    public AudioClip onSell;
-    public AudioClip onExit;
-
-    AudioSource audioSource;
+    AudioPlayerUI audioPlayer;
 
     private void Awake() {
-        audioSource = gameObject.GetComponent<AudioSource>();
+        audioPlayer = FindObjectOfType<AudioPlayerUI>();
     }
 
     public void OnGreenClicked()
     {
         TowerChoosen = towerPool[0].GetComponent<Tower>();
         Tile.IsForcedClosed = false;
-        OnExitClicked();
+        OnExitClicked(Tile.IsForcedClosed);
     }
     
     public void OnBlueClicked()
     {
         TowerChoosen = towerPool[1].GetComponent<Tower>();
         Tile.IsForcedClosed = false;
-        OnExitClicked();
+        OnExitClicked(Tile.IsForcedClosed);
     }
     
     public void OnGreyClicked()
     {
         TowerChoosen = towerPool[2].GetComponent<Tower>();
         Tile.IsForcedClosed = false;
-        OnExitClicked();
+        OnExitClicked(Tile.IsForcedClosed);
     }
     
     public void OnOrangeClicked()
     {
         TowerChoosen = towerPool[3].GetComponent<Tower>();
         Tile.IsForcedClosed = false;
-        OnExitClicked();
+        OnExitClicked(Tile.IsForcedClosed);
     }
 
     public void OnUpgradeClicked()
     {
-        audioSource.clip = onUpgrade;
-        audioSource.Play();
-
         TowerManagement.IsUpgrading = true;
-
-        OnExitClicked();
+        OnExitClicked(false);
     }
 
     public void OnSellClicked()
     {
-        audioSource.clip = onSell;
-        audioSource.Play();
 
         TowerManagement.IsSelling = true;
         Debug.Log("Selling clicked!");
 
-        OnExitClicked();
+        OnExitClicked(false);
     }
 
-    public void OnExitClicked()
+    public void OnExitClicked(bool IsForcedClosed)
     {
-        audioSource.clip = onExit;
-        audioSource.Play();
-
+        if(IsForcedClosed)
+        {
+            audioPlayer.PlayCloseSound();
+        }
         Tile.IsBuildOpen = false;
         Tile.IsUpgradeOpen = false;
 
