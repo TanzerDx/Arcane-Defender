@@ -10,16 +10,14 @@ public class UIManager : MonoBehaviour
 
     public static Tower TowerChoosen = null;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip onUpgrade;
+    public AudioClip onSell;
+    public AudioClip onExit;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    AudioSource audioSource;
+
+    private void Awake() {
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void OnGreenClicked()
@@ -52,21 +50,33 @@ public class UIManager : MonoBehaviour
 
     public void OnUpgradeClicked()
     {
+        audioSource.clip = onUpgrade;
+        audioSource.Play();
+
         TowerManagement.IsUpgrading = true;
+
         OnExitClicked();
     }
 
     public void OnSellClicked()
     {
+        audioSource.clip = onSell;
+        audioSource.Play();
+
         TowerManagement.IsSelling = true;
         Debug.Log("Selling clicked!");
+
         OnExitClicked();
     }
 
     public void OnExitClicked()
     {
+        audioSource.clip = onExit;
+        audioSource.Play();
+
         Tile.IsBuildOpen = false;
         Tile.IsUpgradeOpen = false;
+
         gameObject.SetActive(false);
     }
 }

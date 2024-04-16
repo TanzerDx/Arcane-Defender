@@ -21,6 +21,10 @@ public class TowerManagement : MonoBehaviour
     
     private GameObject popUps;
     
+    AudioSource audioSourceBuild;
+    AudioSource audioSourceUpgrade;
+
+    public AudioClip openPanel;
 
     private Bank bank;
 
@@ -32,6 +36,10 @@ public class TowerManagement : MonoBehaviour
         gridManager = FindObjectOfType<GridManager>();
         buildPanel = popUps.transform.GetChild(0).gameObject;
         upgradePanel = popUps.transform.GetChild(1).gameObject;
+
+        audioSourceBuild = buildPanel.GetComponent<AudioSource>();
+        audioSourceUpgrade = upgradePanel.GetComponent<AudioSource>();
+
         bank = FindObjectOfType<Bank>();
         
         // if (buildPanel == null)
@@ -51,6 +59,10 @@ public class TowerManagement : MonoBehaviour
         if (!Tile.IsBuildOpen && !Tile.IsUpgradeOpen)
         {
             upgradePanel.SetActive(true);
+
+            audioSourceUpgrade.clip = openPanel;
+            audioSourceUpgrade.Play();
+
             Debug.Log("Getting that upgrade panel ready");
             Tile.IsUpgradeOpen = true;
             StartCoroutine(WaitForUIResponse());

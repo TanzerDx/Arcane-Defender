@@ -30,6 +30,11 @@ public class Tile : MonoBehaviour
     private GameObject buildPanel;
     private GameObject upgradePanel;
     private GameObject towerOnThisTile;
+
+    AudioSource audioSourceBuild;
+    AudioSource audioSourceUpgrade;
+
+    public AudioClip openPanel;
     
     GridManager gridManager;
     private Pathfinder pathfinder;
@@ -45,6 +50,12 @@ public class Tile : MonoBehaviour
         normalColor = transform.GetComponent<SpriteRenderer>().color;
         buildPanel = popUps.transform.GetChild(0).gameObject;
         upgradePanel = popUps.transform.GetChild(1).gameObject;
+
+        audioSourceBuild = buildPanel.GetComponent<AudioSource>();
+        audioSourceBuild.enabled = true;
+        
+        audioSourceUpgrade = upgradePanel.GetComponent<AudioSource>();
+        audioSourceUpgrade.enabled = true;
     }
 
     private void Start()
@@ -122,6 +133,10 @@ public class Tile : MonoBehaviour
             {
                 buildPanel.gameObject.SetActive(true);
                 IsBuildOpen = true;
+
+                audioSourceUpgrade.clip = openPanel;
+                audioSourceUpgrade.Play();
+
                 StartCoroutine(WaitForUIResponse());
             }
         }

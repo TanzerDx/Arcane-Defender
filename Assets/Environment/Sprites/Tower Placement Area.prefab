@@ -291,18 +291,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
   placeDistance: 3
   isPlaceable: 1
-  tower1Sounds:
-  - {fileID: 8300000, guid: 96a3c582244c19e4e9c7d71aa23a0066, type: 3}
-  - {fileID: 8300000, guid: 42be64234ae46274abf75f5726b9fb8d, type: 3}
-  tower2Sounds:
-  - {fileID: 8300000, guid: 02605e874c63e944d894ca0c1e222611, type: 3}
-  - {fileID: 8300000, guid: a08825b498fc51545b28ecc133e9c057, type: 3}
-  tower3Sounds:
-  - {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
-  - {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
-  tower4Sounds:
-  - {fileID: 8300000, guid: e938f767690825f49a6abd91b4632621, type: 3}
-  - {fileID: 8300000, guid: 40e6a6e39708786479ece538137c0d70, type: 3}
+  popUps: {fileID: 0}
+  openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
 --- !u!61 &6210384051650483755
 BoxCollider2D:
   m_ObjectHideFlags: 0
