@@ -11865,30 +11865,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUps
       objectReference: {fileID: 0}
-    - target: {fileID: 2474604659477956080, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onExit
-      value: 
-      objectReference: {fileID: 8300000, guid: ac15cf37d7da03f47bcf7bb71f1916ff, type: 3}
-    - target: {fileID: 2474604659477956080, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onSell
-      value: 
-      objectReference: {fileID: 8300000, guid: 851838fd7dd58374581204d9486e524a, type: 3}
-    - target: {fileID: 2474604659477956080, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onUpgrade
-      value: 
-      objectReference: {fileID: 8300000, guid: e42f426a2322f024dbf0f23a2fcef8c4, type: 3}
-    - target: {fileID: 2474604659477956080, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6040798851068855943, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: Priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 6040798851068855943, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6611601676977824057, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11968,30 +11944,6 @@ PrefabInstance:
     - target: {fileID: 6611601676977824057, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7183091386445864620, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: Priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 7183091386445864620, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7278104219241842800, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onExit
-      value: 
-      objectReference: {fileID: 8300000, guid: ac15cf37d7da03f47bcf7bb71f1916ff, type: 3}
-    - target: {fileID: 7278104219241842800, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onSell
-      value: 
-      objectReference: {fileID: 8300000, guid: 851838fd7dd58374581204d9486e524a, type: 3}
-    - target: {fileID: 7278104219241842800, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: onUpgrade
-      value: 
-      objectReference: {fileID: 8300000, guid: e42f426a2322f024dbf0f23a2fcef8c4, type: 3}
-    - target: {fileID: 7278104219241842800, guid: 275fd53cdff443044b6f3b6c5be54bcf, type: 3}
-      propertyPath: audioSource
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

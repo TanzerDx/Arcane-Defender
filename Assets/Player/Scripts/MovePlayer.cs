@@ -28,19 +28,24 @@ public class MovePlayer : MonoBehaviour
         float xValue = (Input.GetAxis("Horizontal")) * moveSpeed  * Time.deltaTime;
         float yValue = (Input.GetAxis("Vertical")) * moveSpeed  * Time.deltaTime;
         
-        isMoving = xValue != 0 || yValue != 0;
-        PlayerAnim.SetBool("IsMoving", isMoving);
+        PlayerAnim.SetBool("IsMoving", false);
 
-        if (xValue > 0)
+        if (!Tile.IsBuildOpen && !Tile.IsUpgradeOpen)
         {
-            sprite.flipX = true;
+            transform.Translate(xValue, yValue , 0, Space.World);
+            
+            isMoving = xValue != 0 || yValue != 0;
+            PlayerAnim.SetBool("IsMoving", isMoving);
+            
+            if (xValue > 0)
+            {
+                sprite.flipX = true;
+            }
+            else if (xValue < 0)
+            {
+                sprite.flipX = false;
+            }
         }
-        else if (xValue < 0)
-        {
-            sprite.flipX = false;
-        }
-
-        transform.Translate(xValue, yValue , 0, Space.World);
 
         if(isMoving && !playerSource.isPlaying)
         {

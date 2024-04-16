@@ -15,6 +15,9 @@ public class TowerManagement : MonoBehaviour
 
     [SerializeField] private Tower building;
 
+    [SerializeField] private GameObject selectedBG;
+    
+    
     private GameObject buildPanel;
     private GameObject upgradePanel;
     private GridManager gridManager;
@@ -58,6 +61,17 @@ public class TowerManagement : MonoBehaviour
     {
         if (!Tile.IsBuildOpen && !Tile.IsUpgradeOpen)
         {
+            
+            if (transform.position.x <= 8)
+            {
+                upgradePanel.transform.localPosition = new Vector3(200, -250, 0);
+            }
+            else
+            {
+                upgradePanel.transform.localPosition = new Vector3(-950, -250, 0);
+            }
+            
+            selectedBG.SetActive(true);
             upgradePanel.SetActive(true);
 
             audioSourceUpgrade.clip = openPanel;
@@ -122,6 +136,7 @@ public class TowerManagement : MonoBehaviour
             UpgradingTower();
         }
 
+        selectedBG.SetActive(false);
         IsSelling = false;
         IsUpgrading = false;
     }

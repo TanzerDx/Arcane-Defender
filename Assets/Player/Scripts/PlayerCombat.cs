@@ -25,9 +25,10 @@ public class PlayerCombat : MonoBehaviour
         playerSource = gameObject.GetComponent<AudioSource>();
     }
 
+    
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && coolDown <= 0)
+        if(Input.GetKeyDown(KeyCode.Space) && coolDown <= 0 && !Tile.IsBuildOpen && !Tile.IsUpgradeOpen)
         {         
             int soundNumberSwing = Random.Range(0, staffSwingSounds.Length);
 

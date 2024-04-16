@@ -19,6 +19,8 @@ public class Tile : MonoBehaviour
     [SerializeField] float placeDistance = 1f;
 
     [SerializeField] bool isPlaceable;
+
+    [SerializeField] private SpriteRenderer sprite;
     
     public bool IsPlaceableValue 
     { 
@@ -75,24 +77,20 @@ public class Tile : MonoBehaviour
     private void FreeTile(object sender, EventArgs e)
     {
         isPlaceable = true;
-        Debug.Log("Freeing the tile");
+        //Debug.Log("Freeing the tile");
         pathfinder.NotifyReceivers();
         towerOnThisTile.GetComponent<TowerManagement>().OnSellTower -= FreeTile;
     }
 
    void OnMouseEnter() {
-        if (isPlaceable)
-        {
-           transform.GetComponent<SpriteRenderer>().color = Color.green;
-        }
-        else if (!isPlaceable)
-        {
-            transform.GetComponent<SpriteRenderer>().color = Color.red;
-        }
+       if (!IsBuildOpen && !IsUpgradeOpen)
+       {
+           ColorChanger(false);
+       }
    }
 
     void OnMouseExit() {
-        transform.GetComponent<SpriteRenderer>().color = normalColor;
+        sprite.color = normalColor;
    }
 
 
@@ -131,6 +129,15 @@ public class Tile : MonoBehaviour
 
             if (playerDistanceFromSquare <= placeDistance && isPlaceable && !IsBuildOpen && !IsUpgradeOpen)
             {
+                if (transform.position.x <= 8)
+                {
+                    buildPanel.transform.localPosition = new Vector3(200, -250, 0);
+                }
+                else
+                {
+                    buildPanel.transform.localPosition = new Vector3(-950, -250, 0);
+                }
+                
                 buildPanel.gameObject.SetActive(true);
                 IsBuildOpen = true;
 
@@ -142,11 +149,33 @@ public class Tile : MonoBehaviour
         }
     }
 
+
+    private void ColorChanger(bool isSelected)
+    {
+        if (isPlaceable)
+        {
+            if (isSelected)
+            {
+                sprite.color = Color.blue;
+            }
+            else
+            {
+                sprite.color = Color.green;
+            }
+        }
+        else if (!isPlaceable)
+        {
+            sprite.color = Color.red;
+        }
+    }
+    
+
     IEnumerator WaitForUIResponse()
     {
         while (IsBuildOpen)
         {
             yield return new WaitForEndOfFrame();
+            ColorChanger(true);
         }
 
         if (!IsForcedClosed)
@@ -162,6 +191,7 @@ public class Tile : MonoBehaviour
             }
         }
 
+        sprite.color = normalColor;
         IsForcedClosed = true;
     }
     
