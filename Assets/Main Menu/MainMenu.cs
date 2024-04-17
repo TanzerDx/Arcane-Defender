@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Waves");
+        SceneManager.LoadScene("TowerUpgrade");
     }
 
     public void QuitGame()

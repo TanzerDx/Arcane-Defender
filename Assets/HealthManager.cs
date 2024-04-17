@@ -18,7 +18,7 @@ public class HealthManager : MonoBehaviour
 
         else if(healthBar == "base")
         {
-            baseHealthBar.fillAmount = healthAmount / 10f;
+            baseHealthBar.fillAmount = healthAmount / 20f;
         }
     }
 }

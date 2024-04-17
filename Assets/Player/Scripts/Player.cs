@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] int playerHealth = 10;
     float characterColorTimer;
+
+    HealthManager healthManager;
     
     public int GetPlayerHealth { get { return playerHealth; }}
 
@@ -18,6 +20,15 @@ public class Player : MonoBehaviour
     [SerializeField] int playerDamage = 2;
     public int GetPlayerDamage { get { return playerDamage; }}
 
+    private void Awake() {
+        healthManager = FindObjectOfType<HealthManager>();
+    }
+
+    void OnEnable() {
+        GetComponent<SpriteRenderer>().color = Color.white;
+        healthManager.ChangeHealthbar("player", playerHealth);
+    }
+
 
 
     void Update()
@@ -25,6 +36,9 @@ public class Player : MonoBehaviour
         if(playerHealth <= 0)
         {
             gameObject.SetActive(false);
+            
+            Tile.IsBuildOpen = true;
+            Tile.IsUpgradeOpen = true;
         }
 
         if(GetComponent<SpriteRenderer>().color == Color.red)

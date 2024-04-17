@@ -69,6 +69,7 @@ public class Tile : MonoBehaviour
                 gridManager.BlockNode(coordinates);
             }
         }
+
     }
     
     private void FreeTile(object sender, EventArgs e)

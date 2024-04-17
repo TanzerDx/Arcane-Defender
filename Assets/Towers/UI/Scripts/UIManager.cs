@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class UIManager : MonoBehaviour
 
     private void Awake() {
         audioPlayer = FindObjectOfType<AudioPlayerUI>();
+        Tile.IsBuildOpen = false;
+        Tile.IsUpgradeOpen = false;
     }
+
 
     public void OnGreenClicked()
     {
@@ -69,5 +73,19 @@ public class UIManager : MonoBehaviour
         Tile.IsUpgradeOpen = false;
 
         gameObject.SetActive(false);
+    }
+
+    public void OnResetGameClicked()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Tile.IsBuildOpen = false;
+        Tile.IsUpgradeOpen = false;
+    }
+
+    public void OnToMainMenuClicked()
+    {
+        Tile.IsBuildOpen = false;
+        Tile.IsUpgradeOpen = false;
+        SceneManager.LoadScene("Main Menu");
     }
 }

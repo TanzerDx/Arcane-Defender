@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
     
     float enemyColorTimer;
 
-    Bank bank;
+    Bank bank; 
 
     [Tooltip("The current health of the monster")]
     [SerializeField] int health;
@@ -37,12 +38,19 @@ public class Enemy : MonoBehaviour
     [Tooltip("The proportion of slow duration applied (2 = Weak to this || 1 = No resistance || 0 = Immunity)")]
     [SerializeField] [Range(0f, 2f)] float slowRes;
     
-    
+    [SerializeField] Image enemyHealthBar;
+
+
     Stats stats;
     
     public Stats EnemyStats
     {
         get { return stats; }
+    }
+
+    public int EnemyDamage
+    {
+        get { return damage; }
     }
 
     private void Awake()
@@ -96,7 +104,6 @@ public class Enemy : MonoBehaviour
     {
         if (isFromPlayer)
         {
-
             int soundNumber = Random.Range(0, enemyHitAudio.Length);
 
             enemySource.clip = enemyHitAudio[soundNumber];
@@ -104,12 +111,16 @@ public class Enemy : MonoBehaviour
             enemySource.Play();
             
         }
+
         GetComponent<SpriteRenderer>().color = Color.red;
 
         if (stats.TakingDamage(damage, isPhysical) <= 0) {
             Reward();
             Destroy(gameObject);
         }
+
+        enemyHealthBar.fillAmount = EnemyStats.Health / (float)health;
+        Debug.Log(EnemyStats.Health);
     }
 
 }
