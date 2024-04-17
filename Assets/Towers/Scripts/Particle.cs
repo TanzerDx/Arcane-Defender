@@ -8,19 +8,35 @@ public class Particle : MonoBehaviour
     [SerializeField] float particleSpeed = 1f;
     [SerializeField] float timeOfInitialization = 0f;
 
-    [SerializeField] private int damage;
+    private int damage;
     public int Damage
     {
         get { return damage;}
         set { damage = value; }
     }
 
-    [SerializeField] private bool isPhysical;
+    private bool isPhysical;
     
     public bool IsPhysical
     {
         get { return isPhysical; }
         set { isPhysical = value; }
+    }
+
+    private float slowDuration;
+
+    public float SlowDuration
+    {
+        get { return slowDuration; }
+        set { slowDuration = value; }
+    }
+
+    private float slowIntensity;
+
+    public float SlowIntensity
+    {
+        get { return slowIntensity; }
+        set { slowIntensity = value; }
     }
     
     private Transform target;

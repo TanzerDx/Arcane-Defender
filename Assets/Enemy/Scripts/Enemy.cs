@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
         get { return stats; }
     }
 
+    private float slowTimer = 0;
+
     private void Awake()
     {
         stats = new Stats(health, moveSpeed, damage, physRes, magicRes, slowRes);
@@ -72,6 +74,17 @@ public class Enemy : MonoBehaviour
             GetComponent<SpriteRenderer>().color = Color.white;
             enemyColorTimer = 0f;
         }
+
+        if (slowTimer > 0)
+        {
+            slowTimer -= Time.deltaTime;
+            //Debug.Log("Current Slow timer: " + slowTimer);
+            if (slowTimer <= 0)
+            {
+                Debug.Log("EndingSlow");
+                stats.EndSlow();
+            }
+        }
     }
 
 
@@ -80,7 +93,7 @@ public class Enemy : MonoBehaviour
         if(other.gameObject.CompareTag("Particle"))
         {
             Particle particleData = other.gameObject.GetComponent<Particle>();
-            ProcessHit(particleData.Damage, particleData.IsPhysical, false);
+            ProcessHit(particleData.Damage, particleData.IsPhysical, false, particleData.SlowDuration, particleData.SlowIntensity);
         }
         //DOING: We'll need to modify this to take into account the various projectiles of the towers
     }
@@ -93,7 +106,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void ProcessHit(int damageRecieved, bool isPhysical, bool isFromPlayer)
+    public void ProcessHit(int damageRecieved, bool isPhysical, bool isFromPlayer, float slowDuration, float slowIntensity)
     {
         if (isFromPlayer)
         {
@@ -111,8 +124,11 @@ public class Enemy : MonoBehaviour
             Reward();
             Destroy(gameObject);
         }
-        
-        Debug.Log("Outch! HP remaining = " + stats.Health + "\nDamage taken = " + damageRecieved);
+
+        slowTimer = stats.GetSlowed(slowDuration, slowIntensity);
+
+
+        //Debug.Log("Outch! HP remaining = " + stats.Health + "\nDamage taken = " + damageRecieved);
     }
 
 }

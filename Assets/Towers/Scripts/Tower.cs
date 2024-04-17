@@ -81,11 +81,24 @@ public class Tower : MonoBehaviour
 
 
 
-    [Header("Miscellaneous")]
+    [Header("SlowEffect")]
     #region Others
 
-    [Tooltip("The category this tower belongs in")]
-    [SerializeField] private bool category;
+    [Range(0.1f, 5f)]
+    [Tooltip("The duration this tower will slow enemies for")]
+    [SerializeField] private float slow;
+    
+    [Range(0f, 1f)]
+    [Tooltip("The effectiveness of the slow (1 = No effect || 0 = Full stop)")]
+    [SerializeField] private float slowIntensity;
+    
+    [Range(0f, 1f)]
+    [Tooltip("Slow intensity gained after upgrading a tower to level 1")]
+    [SerializeField] private float slowUp1;
+    
+    [Range(0f, 1f)]
+    [Tooltip("Slow intensity gained after upgrading a tower to level 2")]
+    [SerializeField] private float slowUp2;
     
     [Tooltip("Is the tower dealing physical damage? If false, the tower is dealing magical damage")]
     [SerializeField] private bool physical;
@@ -108,7 +121,7 @@ public class Tower : MonoBehaviour
     {
         data = new TowerData((damage, damageUp1, damageUp2), (crystalsCost, crystalsLvUpCost1, crystalsLvUpCost2),
             (resourcesCost, resourceLvUpCost1, resourceLvUpCost2), (range, rangeUp1, rangeUp2),
-            (attackSpeed, attackSpeedUp1, attackSpeedUp2), category, physical);
+            (attackSpeed, attackSpeedUp1, attackSpeedUp2), slow, (slowIntensity, slowUp1,slowUp2), physical);
     }
 
 

@@ -25,12 +25,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 42be64234ae46274abf75f5726b9fb8d, type: 3}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slow
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: damage
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: physical
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slowIntensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: towerSounds.Array.size

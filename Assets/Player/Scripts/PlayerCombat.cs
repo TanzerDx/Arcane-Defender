@@ -76,7 +76,7 @@ public class PlayerCombat : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().ProcessHit(player.GetPlayerDamage, true, true); 
+            enemy.GetComponent<Enemy>().ProcessHit(player.GetPlayerDamage, true, true, 0, 1); 
         }
     }
 

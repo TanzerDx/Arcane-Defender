@@ -27,7 +27,7 @@ public class TowerManagement : MonoBehaviour
     AudioSource audioSourceBuild;
     AudioSource audioSourceUpgrade;
 
-    public AudioClip openPanel;
+    [SerializeField] private AudioClip openPanel;
 
     private Bank bank;
 

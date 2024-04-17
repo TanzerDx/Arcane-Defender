@@ -97,6 +97,8 @@ public class TargetLocator : MonoBehaviour
             Particle particleScript = particle.GetComponent<Particle>();
             particleScript.Damage = data.Damage;
             particleScript.IsPhysical = data.Physical;
+            particleScript.SlowDuration = data.SlowTime;
+            particleScript.SlowIntensity = data.SlowIntensity;
             particleScript.SetTarget(target);
         
         }

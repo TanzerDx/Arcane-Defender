@@ -113,10 +113,10 @@ public class Stats
     //The speed reduction is determined by "intensity"
     //0 locking the enemy in place and 1 doing nothing
     //This method returns the total duration of the effect (enemies can be resilient to slow effects)
-    public float GetSlowed(float duration, float intensity)
+    public float GetSlowed(float duration, float intensity = 0.5f)
     {
         isSlowed = true;
-        moveSpeed *= intensity;
+        moveSpeed = (speedSaver*intensity)/slowResist;
         return duration * slowResist;
     }
     

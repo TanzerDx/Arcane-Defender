@@ -72,12 +72,26 @@ public class TowerData
 
 
     //Tower category AKA does it inflicts slow + need for another one for the slow duration
-    [Tooltip("The category this tower belongs in")]
-    private bool category;
-    public bool Category
+    [Tooltip("The duration of the slow")]
+    private float slowTime;
+    public float SlowTime
     {
-        get { return category; }
+        get { return slowTime; }
     }
+
+    [Tooltip("The effectiveness of the slow (1 = No effect || 0 = Full stop)")]
+    private float slowIntensity;
+
+    public float SlowIntensity
+    {
+        get { return slowIntensity; }
+    }
+    
+    [Tooltip("Slow intensity gained after upgrading a tower to level 1")]
+    private float slowUp1;
+    
+    [Tooltip("Slow intensity gained after upgrading a tower to level 2")]
+    private float slowUp2;
 
 
     //Tower damage type
@@ -94,7 +108,7 @@ public class TowerData
     private float sellRatio;
 
     public TowerData((int, int, int) _damage, (int, int, int) _crysCosts, (int, int, int) _ressCosts,
-        (float, float, float) _ranges, (float, float, float) _speed, bool _category, bool _dmgType)
+        (float, float, float) _ranges, (float, float, float) _speed, float _slowTime, (float, float, float) _slowIntensity, bool _dmgType)
     {
         level = 0;
         (damage, damageUp1, damageUp2) = _damage;
@@ -102,7 +116,8 @@ public class TowerData
         (cost.resources, lvUpCost1.resources, lvUpCost2.resources) = _ressCosts;
         (range, rangeUp1, rangeUp2) = _ranges;
         (attackSpeed, attackSpeedUp1, attackSpeedUp2) = _speed;
-        category = _category;
+        slowTime = _slowTime;
+        (slowIntensity, slowUp1, slowUp2) = _slowIntensity;
         physical = _dmgType;
         sellRatio = 0.75f;
     }
@@ -160,12 +175,14 @@ public class TowerData
             damage += damageUp1;
             range += rangeUp1;
             attackSpeed += attackSpeedUp1;
+            slowIntensity += slowUp1;
         }
         else
         {
             damage += damageUp2;
             range += rangeUp2;
             attackSpeed += attackSpeedUp2;
+            slowIntensity += slowUp2;
         }
 
         return price;
