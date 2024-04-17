@@ -29,6 +29,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: physRes
       value: 1
       objectReference: {fileID: 0}
@@ -39,6 +47,14 @@ PrefabInstance:
     - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: magicRes
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: crystalReward
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: resourceReward
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5824226513067302212, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_Sprite

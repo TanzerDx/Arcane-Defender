@@ -28,6 +28,38 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: damage
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: health
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: physRes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: slowRes
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: magicRes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: moveSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: crystalReward
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: resourceReward
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5824226513067302212, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_FlipX
       value: 0

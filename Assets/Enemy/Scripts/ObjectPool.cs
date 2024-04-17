@@ -21,6 +21,7 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private Button StartWave;
     [SerializeField] private Text ButtonText;
 
+    private int wave = 0;
 
     public GameObject[] GetPool {
         get {return pool;}
@@ -51,6 +52,8 @@ public class ObjectPool : MonoBehaviour
 
     void PopulatePool()
     {
+        wave += 1;
+        spawnTimer = 2f - (0.075f * wave);
         pool = new GameObject[poolSize];
 
         for (int i = 0; i < poolSize; i++)
@@ -110,7 +113,7 @@ public class ObjectPool : MonoBehaviour
 
         if (OnWaveSpawned != null)
         {
-            OnWaveSpawned(this, new TimerEventArgs { timer = poolSize*4 });
+            OnWaveSpawned(this, new TimerEventArgs { timer = poolSize*2 });
         }
 
         StartWave.interactable = true;

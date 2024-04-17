@@ -16,10 +16,25 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private GameObject[] wave3;
     [SerializeField] private GameObject[] wave4;
     [SerializeField] private GameObject[] wave5;
+    [SerializeField] private GameObject[] wave6;
+    [SerializeField] private GameObject[] wave7;
+    [SerializeField] private GameObject[] wave8;
+    [SerializeField] private GameObject[] wave9;
+    [SerializeField] private GameObject[] wave10;
+    [SerializeField] private GameObject[] wave11;
+    [SerializeField] private GameObject[] wave12;
+    [SerializeField] private GameObject[] wave13;
+    [SerializeField] private GameObject[] wave14;
+    [SerializeField] private GameObject[] wave15;
+    [SerializeField] private GameObject[] wave16;
+    [SerializeField] private GameObject[] wave17;
+    [SerializeField] private GameObject[] wave18;
+    [SerializeField] private GameObject[] wave19;
+    [SerializeField] private GameObject[] wave20;
 
     [SerializeField] private ObjectPool reference;
 
-    [SerializeField] private int crystalBonus = 3;
+    [SerializeField] private int crystalBonus = 1;
     [SerializeField] private int resourceBonus = 2;
 
     private float timerBeforNextWave = 0;
@@ -39,6 +54,21 @@ public class WaveManager : MonoBehaviour
         waves.Enqueue(wave3);
         waves.Enqueue(wave4);
         waves.Enqueue(wave5);
+        waves.Enqueue(wave6);
+        waves.Enqueue(wave7);
+        waves.Enqueue(wave8);
+        waves.Enqueue(wave9);
+        waves.Enqueue(wave10);
+        waves.Enqueue(wave11);
+        waves.Enqueue(wave12);
+        waves.Enqueue(wave13);
+        waves.Enqueue(wave14);
+        waves.Enqueue(wave15);
+        waves.Enqueue(wave16);
+        waves.Enqueue(wave17);
+        waves.Enqueue(wave18);
+        waves.Enqueue(wave19);
+        waves.Enqueue(wave20);
     }
 
     // Update is called once per frame

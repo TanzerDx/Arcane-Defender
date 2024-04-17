@@ -12,7 +12,7 @@ public class Tower : MonoBehaviour
     #region Damage
     
     [Tooltip("Base damage of the tower, updated if upgraded")]
-    [SerializeField] [Range(1, 5)] private int damage;
+    [SerializeField] [Range(1, 10)] private int damage;
     
     [Tooltip("Damage gained after upgrading a tower to level 1")]
     [SerializeField] private int damageUp1;
@@ -53,7 +53,7 @@ public class Tower : MonoBehaviour
     #region Range
 
     [Tooltip("Base range of the tower, updated if upgraded (1 range = 1 square)")]
-    [SerializeField] [Range(1f, 5f)]private float range;
+    [SerializeField] [Range(1f, 15f)]private float range;
     
     [Tooltip("Range gained after upgrading a tower to level 1")]
     [SerializeField] private float rangeUp1;
@@ -69,7 +69,7 @@ public class Tower : MonoBehaviour
     #region AttackSpeed
 
     [Tooltip("Number of attacks per second")]
-    [SerializeField] [Range(0.1f, 5f)] private float attackSpeed;
+    [SerializeField] [Range(0.1f, 10f)] private float attackSpeed;
     
     [Tooltip("Attack speed gained after upgrading a tower to level 1")]
     [SerializeField] private float attackSpeedUp1;
@@ -84,7 +84,7 @@ public class Tower : MonoBehaviour
     [Header("SlowEffect")]
     #region Others
 
-    [Range(0.1f, 5f)]
+    [Range(0f, 5f)]
     [Tooltip("The duration this tower will slow enemies for")]
     [SerializeField] private float slow;
     

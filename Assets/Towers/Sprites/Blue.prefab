@@ -17,6 +17,66 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 890fa6ff39315c34193da482736becd1, type: 2}
     - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slow
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slowUp1
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slowUp2
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: physical
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: rangeUp2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: damageUp1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: damageUp2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: attackSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: crystalsCost
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: resourcesCost
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: slowIntensity
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: crystalsLvUpCost1
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: crystalsLvUpCost2
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: resourceLvUpCost1
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
+      propertyPath: resourceLvUpCost2
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
       propertyPath: towerSounds.Array.size
       value: 2
       objectReference: {fileID: 0}

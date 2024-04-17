@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0f, 2f)] float magicRes;
 
     [Tooltip("The proportion of slow duration applied (2 = Weak to this || 1 = No resistance || 0 = Immunity)")]
-    [SerializeField] [Range(0f, 2f)] float slowRes;
+    [SerializeField] [Range(0.01f, 2f)] float slowRes;
     
     
     Stats stats;
