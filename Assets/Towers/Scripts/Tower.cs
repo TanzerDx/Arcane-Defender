@@ -105,6 +105,8 @@ public class Tower : MonoBehaviour
 
     #endregion
 
+    [SerializeField] private Transform childTransform;
+    
     private TowerData data;
 
 
@@ -122,6 +124,7 @@ public class Tower : MonoBehaviour
         data = new TowerData((damage, damageUp1, damageUp2), (crystalsCost, crystalsLvUpCost1, crystalsLvUpCost2),
             (resourcesCost, resourceLvUpCost1, resourceLvUpCost2), (range, rangeUp1, rangeUp2),
             (attackSpeed, attackSpeedUp1, attackSpeedUp2), slow, (slowIntensity, slowUp1,slowUp2), physical);
+        childTransform.localScale = new Vector3(data.Range, data.Range, data.Range);
     }
 
 

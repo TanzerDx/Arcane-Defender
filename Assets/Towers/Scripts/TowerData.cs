@@ -175,14 +175,14 @@ public class TowerData
             damage += damageUp1;
             range += rangeUp1;
             attackSpeed += attackSpeedUp1;
-            slowIntensity += slowUp1;
+            slowIntensity -= slowUp1;
         }
         else
         {
             damage += damageUp2;
             range += rangeUp2;
             attackSpeed += attackSpeedUp2;
-            slowIntensity += slowUp2;
+            slowIntensity -= slowUp2;
         }
 
         return price;

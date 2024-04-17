@@ -118,8 +118,12 @@ MonoBehaviour:
   attackSpeed: 3
   attackSpeedUp1: 0
   attackSpeedUp2: 0
-  category: Model
+  slow: 0
+  slowIntensity: 0
+  slowUp1: 0
+  slowUp2: 0
   physical: 1
+  childTransform: {fileID: 8959537044811366835}
   towerSounds:
   - {fileID: 0}
   - {fileID: 0}
@@ -183,6 +187,7 @@ MonoBehaviour:
   stateAnimation: {fileID: -6514621409619104784}
   building: {fileID: 2726533630300398540}
   selectedBG: {fileID: 7707456220841484170}
+  attackRange: {fileID: 8959537044811366835}
   openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
 --- !u!95 &-6514621409619104784
 Animator:
@@ -377,7 +382,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2444887875532282752
 MonoBehaviour:
