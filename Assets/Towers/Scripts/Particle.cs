@@ -46,7 +46,7 @@ public class Particle : MonoBehaviour
     }
 
     private void Update() {
-        if (!target || timeOfInitialization >= 0.5f)
+        if (!target || timeOfInitialization >= 1.3f)
         {
             Destroy(gameObject);
             return;

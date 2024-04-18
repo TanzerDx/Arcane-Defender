@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: slowRes
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: magicRes
@@ -346,13 +346,13 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
-      propertyPath: resourceReward
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: enemyHealthBar
       value: 
       objectReference: {fileID: 3324761509584914001}
+    - target: {fileID: 4341492342434477697, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
+      propertyPath: resourceReward
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5824226513067302212, guid: 593d5caad36e9d44ca269678ec5799f1, type: 3}
       propertyPath: m_FlipX
       value: 0

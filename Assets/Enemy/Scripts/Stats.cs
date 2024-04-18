@@ -92,10 +92,12 @@ public class Stats
         if (physical)
         {
             health = health - (int)(amount * physResistance*damageMultiplier);
+            
         }
         else
         {
             health = health - (int)(amount * magicResistance * damageMultiplier);
+            Debug.Log("Magical damage, damage " + amount + ", res " + magicResistance + ", total " + (int)(amount * physResistance*damageMultiplier));
         }
 
         return health;
@@ -115,9 +117,16 @@ public class Stats
     //This method returns the total duration of the effect (enemies can be resilient to slow effects)
     public float GetSlowed(float duration, float intensity = 0.5f)
     {
-        isSlowed = true;
-        moveSpeed = (speedSaver*intensity)/slowResist;
-        return duration * slowResist;
+        if (duration != 0)
+        {
+            isSlowed = true;
+            moveSpeed -= (speedSaver*intensity)*slowResist;
+            return duration * slowResist;
+        }
+        else
+        {
+            return 0;
+        }
     }
     
     

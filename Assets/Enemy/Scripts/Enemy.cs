@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0f, 2f)] float magicRes;
 
     [Tooltip("The proportion of slow duration applied (2 = Weak to this || 1 = No resistance || 0 = Immunity)")]
-    [SerializeField] [Range(0.01f, 2f)] float slowRes;
+    [SerializeField] [Range(0f, 2f)] float slowRes;
     
     [SerializeField] Image enemyHealthBar;
 
@@ -89,7 +89,7 @@ public class Enemy : MonoBehaviour
             //Debug.Log("Current Slow timer: " + slowTimer);
             if (slowTimer <= 0)
             {
-                Debug.Log("EndingSlow");
+                //Debug.Log("EndingSlow");
                 stats.EndSlow();
             }
         }
@@ -103,7 +103,6 @@ public class Enemy : MonoBehaviour
             Particle particleData = other.gameObject.GetComponent<Particle>();
             ProcessHit(particleData.Damage, particleData.IsPhysical, false, particleData.SlowDuration, particleData.SlowIntensity);
         }
-        //DOING: We'll need to modify this to take into account the various projectiles of the towers
     }
 
     public void Reward()
@@ -132,14 +131,15 @@ public class Enemy : MonoBehaviour
             Reward();
             Destroy(gameObject);
         }
-
+        
+        
         slowTimer = stats.GetSlowed(slowDuration, slowIntensity);
 
 
-        //Debug.Log("Outch! HP remaining = " + stats.Health + "\nDamage taken = " + damageRecieved);
+        Debug.Log("Outch! HP remaining = " + stats.Health + "\nDamage taken = " + damageRecieved);
 
         enemyHealthBar.fillAmount = EnemyStats.Health / (float)health;
-        Debug.Log(EnemyStats.Health);
+        //Debug.Log(EnemyStats.Health);
     }
 
 }
