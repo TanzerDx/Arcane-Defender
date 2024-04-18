@@ -33,6 +33,11 @@ public class TowerData
     [Tooltip("Base cost of the tower (crystals, resources)")]
     private (int crystals, int resources) cost;
 
+    public (int, int) GetCost
+    {
+        get { return cost; }
+    }
+
     [Tooltip("Cost of the first upgrade (crystals, resources)")]
     private (int crystals, int resources) lvUpCost1;
 

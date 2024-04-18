@@ -6869,8 +6869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91a41814f3d21843aa6fec3f69acfdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingCrystalBalance: 1523
-  startingResourceBalance: 2206
+  startingCrystalBalance: 100
+  startingResourceBalance: 150
   currentCrystalBalance: 0
   currentResourceBalance: 0
   displayCrystalBalance: {fileID: 808633690}
@@ -32237,14 +32237,6 @@ PrefabInstance:
       propertyPath: ButtonText
       value: 
       objectReference: {fileID: 2099942759}
-    - target: {fileID: 442213132796644631, guid: 2def71b639503554f8c45db7d5600700, type: 3}
-      propertyPath: wave1.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 442213132796644631, guid: 2def71b639503554f8c45db7d5600700, type: 3}
-      propertyPath: wave1.Array.data[0]
-      value: 
-      objectReference: {fileID: 1112942991391517005, guid: ba984315384798543a6e7cd842154c5e, type: 3}
     - target: {fileID: 2198635186544466253, guid: 2def71b639503554f8c45db7d5600700, type: 3}
       propertyPath: m_Name
       value: ObjectPool

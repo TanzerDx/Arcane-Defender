@@ -137,7 +137,8 @@ public class Tower : MonoBehaviour
             return false;
         }
 
-
+        //Tower.Data.GetCost.Item1
+        
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
             Debug.Log("(Crys, Ress) = " + crystalsCost + ", " + resourcesCost);

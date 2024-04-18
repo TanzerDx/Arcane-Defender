@@ -182,7 +182,9 @@ public class Tile : MonoBehaviour
 
         if (!IsForcedClosed)
         {
+            towerPrefab = UIManager.TowerChoosen;
             Vector3 opti = transform.position;
+            //Debug.Log("(crystals, resources) = " + UIManager.TowerChoosen.Data.GetCost);
             bool isSuccessful = towerPrefab.CreateTower(UIManager.TowerChoosen, new Vector3(opti.x, opti.y, opti.z -1), ref towerOnThisTile);
             if (isSuccessful)
             {
