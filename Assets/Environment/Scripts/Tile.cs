@@ -56,7 +56,10 @@ public class Tile : MonoBehaviour
         upgradePanel = popUps.transform.GetChild(1).gameObject;
 
         audioPlayer = FindObjectOfType<AudioPlayerUI>();
-
+        
+        IsBuildOpen = false;
+        IsUpgradeOpen = false;
+        IsForcedClosed = true;
     }
 
     private void Start()

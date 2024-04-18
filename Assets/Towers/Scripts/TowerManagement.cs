@@ -43,6 +43,9 @@ public class TowerManagement : MonoBehaviour
 
         bank = FindObjectOfType<Bank>();
         
+        IsUpgrading = false;
+        IsSelling = false;
+        
         // if (buildPanel == null)
         // {
         //     print("Well that is akward...");
