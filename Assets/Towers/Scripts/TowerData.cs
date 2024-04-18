@@ -164,7 +164,7 @@ public class TowerData
             price = lvUpCost2;
         }
 
-        if (price.Item1 > money.Item1 && price.Item2 > money.Item2)
+        if (price.Item1 > money.Item1 || price.Item2 > money.Item2)
         {
             return (0, 0);
         }

@@ -20,14 +20,14 @@ public class Tile : MonoBehaviour
 
     [SerializeField] bool isPlaceable;
 
-    [SerializeField] private SpriteRenderer sprite;
-    
     public bool IsPlaceableValue 
     { 
         get {return isPlaceable;}
     }
 
     [SerializeField] private GameObject popUps;
+    
+    [SerializeField] private SpriteRenderer sprite;
 
     private GameObject buildPanel;
     private GameObject upgradePanel;
@@ -77,7 +77,7 @@ public class Tile : MonoBehaviour
     private void FreeTile(object sender, EventArgs e)
     {
         isPlaceable = true;
-        //Debug.Log("Freeing the tile");
+        Debug.Log("Freeing the tile");
         pathfinder.NotifyReceivers();
         towerOnThisTile.GetComponent<TowerManagement>().OnSellTower -= FreeTile;
     }
@@ -99,6 +99,7 @@ public class Tile : MonoBehaviour
         {
             return;
         }*/
+        
         if (gridManager.GetNode(coordinates).isWalkable && !pathfinder.WillBlockPath(coordinates))
         {
             /*currentPlayerPosition = playerPrefab.transform.position;
@@ -116,7 +117,7 @@ public class Tile : MonoBehaviour
             if (isTowerPlaced) {
                 isPlaceable = false;
             }*/
-            
+
             // Dictionary<Vector2Int, Node> grid = gridManager.Grid;
             // Vector2Int cord = gridManager.GetCoordinatesFromPosition(transform.position);
             // Debug.Log("isExplored: " + grid[cord].isExplored);
@@ -129,6 +130,7 @@ public class Tile : MonoBehaviour
 
             if (playerDistanceFromSquare <= placeDistance && isPlaceable && !IsBuildOpen && !IsUpgradeOpen)
             {
+                
                 if (transform.position.x <= 8)
                 {
                     buildPanel.transform.localPosition = new Vector3(200, -250, 0);
@@ -138,6 +140,7 @@ public class Tile : MonoBehaviour
                     buildPanel.transform.localPosition = new Vector3(-950, -250, 0);
                 }
                 
+                //Debug.Log("Tile: +" + transform.position.ToString());
                 buildPanel.gameObject.SetActive(true);
                 IsBuildOpen = true;
 
@@ -147,8 +150,8 @@ public class Tile : MonoBehaviour
             }
         }
     }
-
-
+    
+    
     private void ColorChanger(bool isSelected)
     {
         if (isPlaceable)

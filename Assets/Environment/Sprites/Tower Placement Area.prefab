@@ -289,11 +289,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 2726533630300398540, guid: c0aad9b1f45e9c440a7bcd562a839209, type: 3}
-  playerPrefab: {fileID: 8852524502856090688, guid: 7e8f865537c45e344a3dd6d020130925, type: 3}
+  playerPrefab: {fileID: 0}
   placeDistance: 3
   isPlaceable: 1
-  sprite: {fileID: 3696888545652400088}
   popUps: {fileID: 0}
+  sprite: {fileID: 3696888545652400088}
   openPanel: {fileID: 8300000, guid: 71711387a0ca0014ab262dd701d349c9, type: 3}
 --- !u!61 &6210384051650483755
 BoxCollider2D:

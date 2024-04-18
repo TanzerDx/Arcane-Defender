@@ -140,6 +140,7 @@ public class Tower : MonoBehaviour
 
         if(bank.GetCurrentCrystalBalance >= crystalsCost && bank.GetCurrentResourceBalance >= resourcesCost)
         {
+            Debug.Log("(Crys, Ress) = " + crystalsCost + ", " + resourcesCost);
             GameObject instantiatedTower = Instantiate(tower.gameObject, position, Quaternion.identity);
 
             int soundNumber = Random.Range(0, towerSounds.Length);

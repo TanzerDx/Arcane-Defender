@@ -110,11 +110,12 @@ public class TowerManagement : MonoBehaviour
         }
         
         (int a, int b) = building.Data.Upgrade((bank.GetCurrentCrystalBalance, bank.GetCurrentResourceBalance));
+        //Debug.Log("Crys, Ress = " + a + ", " + b);
         if ((a, b) != (0, 0))
         {
             attackRange.transform.localScale = 
                 new Vector2(building.Data.Range, building.Data.Range);
-            Debug.Log("I CHANGED THE RANGE, NOW: " + building.Data.Range);
+            //Debug.Log("I CHANGED THE RANGE, NOW: " + building.Data.Range);
             bank.Withdraw(a,b);
         }
         else
