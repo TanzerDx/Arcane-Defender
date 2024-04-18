@@ -26,10 +26,7 @@ public class TowerManagement : MonoBehaviour
     
     private GameObject popUps;
     
-    AudioSource audioSourceBuild;
-    AudioSource audioSourceUpgrade;
-
-    [SerializeField] private AudioClip openPanel;
+    AudioPlayerUI audioPlayer;
 
     private Bank bank;
 
@@ -42,8 +39,7 @@ public class TowerManagement : MonoBehaviour
         buildPanel = popUps.transform.GetChild(0).gameObject;
         upgradePanel = popUps.transform.GetChild(1).gameObject;
 
-        audioSourceBuild = buildPanel.GetComponent<AudioSource>();
-        audioSourceUpgrade = upgradePanel.GetComponent<AudioSource>();
+        audioPlayer = FindObjectOfType<AudioPlayerUI>();
 
         bank = FindObjectOfType<Bank>();
         
@@ -76,8 +72,7 @@ public class TowerManagement : MonoBehaviour
             selectedBG.SetActive(true);
             upgradePanel.SetActive(true);
 
-            audioSourceUpgrade.clip = openPanel;
-            audioSourceUpgrade.Play();
+            audioPlayer.PlayOpenSound();
 
             Debug.Log("Getting that upgrade panel ready");
             Tile.IsUpgradeOpen = true;
@@ -89,6 +84,7 @@ public class TowerManagement : MonoBehaviour
 
     private void SellingTower()
     {
+
         (int a, int b) = building.Data.Sell();
         bank.Deposit(a,b);
         gridManager.UnlockNode(gridManager.GetCoordinatesFromPosition(transform.position));
@@ -98,6 +94,7 @@ public class TowerManagement : MonoBehaviour
         if (OnSellTower != null)
         {
             OnSellTower(this, EventArgs.Empty);
+            audioPlayer.PlaySellSound();
         }
         
         Destroy(gameObject, 0.1f);
@@ -107,6 +104,11 @@ public class TowerManagement : MonoBehaviour
 
     private void UpgradingTower()
     {
+        if (building.Data.Level != 2)
+        {
+            audioPlayer.PlayUgradeSound();
+        }
+        
         (int a, int b) = building.Data.Upgrade((bank.GetCurrentCrystalBalance, bank.GetCurrentResourceBalance));
         if ((a, b) != (0, 0))
         {
@@ -119,6 +121,7 @@ public class TowerManagement : MonoBehaviour
         {
             //Do stuff to tell the player they don't have the money
         }
+
         stateAnimation.SetInteger("Level", building.Data.Level);
     }
 
@@ -135,6 +138,7 @@ public class TowerManagement : MonoBehaviour
             IsSelling = false;
             IsUpgrading = false;
             SellingTower();
+
         }
         else if (IsUpgrading)
         {

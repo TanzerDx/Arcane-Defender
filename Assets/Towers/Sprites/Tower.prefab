@@ -125,8 +125,8 @@ MonoBehaviour:
   physical: 1
   childTransform: {fileID: 8959537044811366835}
   towerSounds:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f291508877b3bb94091b9da2031c6701, type: 3}
+  - {fileID: 8300000, guid: fae2370c221da164abf5c47062cbaf37, type: 3}
 --- !u!61 &3752508951919672759
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -37,6 +37,8 @@ public class Tile : MonoBehaviour
     AudioSource audioSourceUpgrade;
 
     public AudioClip openPanel;
+
+    AudioPlayerUI audioPlayer;
     
     GridManager gridManager;
     private Pathfinder pathfinder;
@@ -53,11 +55,8 @@ public class Tile : MonoBehaviour
         buildPanel = popUps.transform.GetChild(0).gameObject;
         upgradePanel = popUps.transform.GetChild(1).gameObject;
 
-        audioSourceBuild = buildPanel.GetComponent<AudioSource>();
-        audioSourceBuild.enabled = true;
-        
-        audioSourceUpgrade = upgradePanel.GetComponent<AudioSource>();
-        audioSourceUpgrade.enabled = true;
+        audioPlayer = FindObjectOfType<AudioPlayerUI>();
+
     }
 
     private void Start()
@@ -72,6 +71,7 @@ public class Tile : MonoBehaviour
                 gridManager.BlockNode(coordinates);
             }
         }
+
     }
     
     private void FreeTile(object sender, EventArgs e)
@@ -141,8 +141,7 @@ public class Tile : MonoBehaviour
                 buildPanel.gameObject.SetActive(true);
                 IsBuildOpen = true;
 
-                audioSourceUpgrade.clip = openPanel;
-                audioSourceUpgrade.Play();
+                audioPlayer.PlayOpenSound();
 
                 StartCoroutine(WaitForUIResponse());
             }
