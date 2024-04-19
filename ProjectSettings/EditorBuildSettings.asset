@@ -11,10 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: b56377b5593232f4b86af6332e3764ca
+  - enabled: 1
+    path: Assets/Scenes/Encyclopedia.unity
+    guid: ce669e15a51fd384f8fd67ded801a34a
+  - enabled: 1
+    path: Assets/Scenes/TowerUpgrade.unity
+    guid: c2229699699155048b9a2d5a43f92fc9
   - enabled: 0
     path: Assets/Scenes/Pathfinding.unity
     guid: 13d95fb4350ab7f4e875d790fad07452
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Waves.unity
     guid: 0540d60d5b14fd6489ccb5eab8e6a2fe
   m_configObjects: {}
