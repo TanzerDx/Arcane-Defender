@@ -1,11 +1,71 @@
-Arcane Defender is a 2D Tower Defense game based in a post-apocalyptic environment. The gameplay focuses primarily on strategic placement and upgrades of the towers. You should either decide on whether to place more towers for an upcoming wave or upgrade existing ones. You are also obliged to separate your time accordingly between each wave so that you can build and upgrade specific towers. This not only makes the player under constant pressure, but also makes them think ahead of time to plan their upcoming actions and next build plan. Moreover, there may be points in time where you must decide on what to spend resources on: defences upgrades or character upgrades. 
+# 🎮 Arcane Defender
 
-Unlike more traditional tower defence games, the player is moveable around the playable area. They can attack the enemy, but the enemy can also attack the player. However, without towers, the enemy gets progressively impossible to defeat, so our character is always in need of towers that will help them to protect the settlement. 
+**Arcane Defender** is a 2D tower defense game set in a **post-apocalyptic, magic-infused world**. The gameplay challenges you to make **strategic decisions** under pressure:  
+Will you **build more towers** to prepare for incoming waves, or **upgrade existing ones** for stronger defenses?  
+Time management and planning are crucial — every second counts as you balance building, upgrading, and preparing for the next enemy assault.
 
-You must build magic towers to defeat the upcoming waves of enemies. The towers can be built and upgraded by using resources and magic energy crystals that are dropped from the enemy. The quantity of resources that the enemy drops when defeated progressively gets bigger, becoming much easier to obtain. 
+---
 
-Your playable character has an HP limit and an inventory to keep track of how much crystals and resources they have, and if it dies, they will reappear later, losing some time.  To make it easier for the player to survive, they can upgrade their towers. Each upgrade becomes increasingly expensive, but at the cost of it becoming more powerful and sometimes adding new proprieties to the towers. 
+## 📚 Table of Contents
 
-The following knowledge is displayed with this project:
-- Work with Unity
-- C#
+- [📖 Project Description]
+- [📦 Technologies Used]
+- [✨ Key Features]
+- [🎮 How to Play]
+- [✅ Results & Learnings]
+
+---
+
+## 📖 Project Description
+
+Unlike traditional tower defense games, **Arcane Defender** puts **you directly into the battlefield**.  
+Your character is **fully moveable** within the playable area, able to **attack enemies** — but also vulnerable to their attacks.  
+
+While you can fight, enemies become increasingly powerful, and **towers are essential** for survival. You must **build and upgrade magical towers** using resources and **magic energy crystals** 
+dropped by defeated enemies. As waves progress, enemies drop **more valuable loot**, allowing for stronger defenses.
+
+Your character has a **limited HP** and an **inventory system** to track collected resources.  
+If you fall in battle, you’ll **respawn after a delay**, losing precious time — so efficient resource use and smart tower placement are vital.
+
+Tower upgrades are **progressively more expensive** but significantly **increase their power** and may even **unlock new abilities**, giving you a tactical edge.
+
+---
+
+## 📦 Technologies Used
+
+- **Engine:** Unity  
+- **Language:** C#  
+- **Platform:** PC / Windows
+
+---
+
+## ✨ Key Features
+
+- 🧙‍♂️ **Playable Character** – Move freely around the map and engage enemies directly.  
+- 🏰 **Strategic Tower Placement** – Build, position, and upgrade magical towers to defend your settlement.  
+- 💎 **Resource & Loot System** – Collect crystals and materials from defeated enemies to strengthen your defenses.  
+- ⚔️ **Challenging Wave Mechanics** – Face increasingly difficult enemy waves that test your strategy and adaptability.  
+- 🛠️ **Progressive Upgrades** – Make meaningful decisions with limited resources: expand your defenses or enhance existing ones.  
+
+---
+
+## 🎮 How to Play
+
+1. **Explore** the battlefield and gather resources from fallen enemies.  
+2. **Build towers** in strategic locations to defend your settlement.  
+3. **Upgrade towers** to unlock stronger attacks and special abilities.  
+4. **Balance** your time between combat, building, and planning for future waves.  
+5. **Survive** as many waves as possible!
+
+---
+
+## ✅ Results & Learnings
+
+Developing **Arcane Defender** provided us with valuable hands-on experience in:
+
+- ⚡ **Unity** – Game engine mechanics, asset integration, and performance optimization.  
+- 🧩 **Game Design** – Balancing difficulty, resource systems, and player engagement through strategic decision-making.  
+- 🧠 **System Architecture** – Managing interactions between character control, tower mechanics, and enemy behavior.  
+- 🎨 **Level & UI Design** – Creating immersive environments and intuitive interfaces for smooth gameplay.  
+
+
